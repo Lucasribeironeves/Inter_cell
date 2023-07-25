@@ -1,3 +1,13 @@
+<?php 
+    session_start();
+    $i=0;
+    foreach($_SESSION['itens'] as $item){
+        echo $i ."| Nome:". $item['desc'] . "| Valor:" . $item['vl'] . "| Quantidade:" . $item['qtd'] . "<br>";
+        $i++;
+    }
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>

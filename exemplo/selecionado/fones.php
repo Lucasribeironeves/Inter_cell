@@ -26,18 +26,19 @@
             $i++;
         }
         if($ni>0) {
-            for ($i=0; $i < $ni; $i++) { 
-                
+            $_SESSION['valor_total'] = $valor_total;
+            header("Location: ../central/login.php", true, 303);
+            /*for ($i=0; $i < $ni; $i++) { 
+
                 echo $i ."| Nome:". $_SESSION['itens'][$i]['desc'] . "| Valor:" . $_SESSION['itens'][$i]['vl'] . "| Quantidade:" . $_SESSION['itens'][$i]['qtd'] . "<br>";
             }
 
 
             $ni++;
+            */
         }
-
     }
     echo "Valor Total: ".$valor_total;
-    $_SESSION['valor_total'] = $valor_total
 
 ?>
 
