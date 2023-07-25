@@ -26,35 +26,35 @@
                 <th>Valor</th>
             </tr>
             <tr>
-                <td>0</td>
+                <td>1</td>
                 <td><input type="checkbox" name="pelicula0" id="pelicula"></td>
                 <td>Samsung A32</td>
                 <td><input type="number" name="qtd0" id="qtd0" min="0"></td>
                 <td>20,00</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td>2</td>
                 <td><input type="checkbox" name="pelicula1" id="pelicula"></td>
                 <td>Samsung A33 5G</td>
                 <td><input type="number" name="qtd1" id="qtd1" min="0"></td>
                 <td>20,00</td>
             </tr>
             <tr>
-                <td>2</td>
+                <td>3</td>
                 <td><input type="checkbox" name="pelicula2" id="pelicula"></td>
                 <td>Redmi Note 11 4G</td>
                 <td><input type="number" name="qtd2" id="qtd2" min="0"></td>
                 <td>20,00</td>
             </tr>
             <tr>
-                <td>3</td>
+                <td>4</td>
                 <td><input type="checkbox" name="pelicula3" id="pelicula"></td>
                 <td>Moto G30</td>
                 <td><input type="number" name="qtd3" id="qtd3" min="0"></td>
                 <td>20,00</td>
             </tr>
             <tr>
-                <td>4</td>
+                <td>5</td>
                 <td><input type="checkbox" name="pelicula4" id="pelicula"></td>
                 <td>Samsung M23 5G</td>
                 <td><input type="number" name="qtd4" id="qtd4" min="0"></td>
