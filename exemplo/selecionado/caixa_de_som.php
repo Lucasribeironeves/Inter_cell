@@ -90,7 +90,7 @@ session_start();
                 <tr>
                     <td>4</td>
                     <td><input type="checkbox" name="caixa3" id="caixa"></td>
-                    <td><input type="text" name="desc3" value=" C3 tech - Bluetooth" readonly></td>
+                    <td><input type="text" name="desc3" value="C3 tech - Bluetooth" readonly></td>
                     <td><input type="number" name="qtd3" id="qtd3" value="0" min="0"></td>
                     <td><input type="number" name="vl3" value="79.00" readonly></td>
                 </tr>
