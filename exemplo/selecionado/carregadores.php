@@ -53,7 +53,7 @@ session_start();
         <script src='main.js'></script>
     </head>
     <body>
-        <form action="carregador.php" method="post">
+        <form action="carregadores.php" method="post">
             <table>
                 <tr>
                     <th colspan="5">Selecione seu carregador ;D</th>

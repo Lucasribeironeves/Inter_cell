@@ -55,7 +55,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <form action="fones.php" method="post">
+    <form action="capinhas.php" method="post">
         <table>
             <tr>
                 <th colspan="5">Selecione sua capinha ;D</th>

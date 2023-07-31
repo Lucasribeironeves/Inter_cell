@@ -53,7 +53,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <form action="pelicula.php" method="post">
+    <form action="peliculas.php" method="post">
         <table>
             <tr>
                 <th colspan="5">Selecione sua película ;D</th>
