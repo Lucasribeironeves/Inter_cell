@@ -47,7 +47,7 @@ session_start();
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Caixa de som </title>
+        <title>Carregadores</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
         <script src='main.js'></script>
@@ -68,37 +68,37 @@ session_start();
                 <tr>
                     <td>1</td>
                     <td><input type="checkbox" name="carregador0" id="carregador"></td>
-                    <td><input type="text" name="desc0" value="Mini/JBL - Bluetooth" readonly></td>
+                    <td><input type="text" name="desc0" value="Samsung 20W" readonly></td>
                     <td><input type="number" name="qtd0" id="qtd0" value="0" min="0"></td>
                     <td><input type="text" name="vl0" value="59.90" readonly></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td><input type="checkbox" name="carregador1" id="carregador"></td>
-                    <td><input type="text" name="desc1" value= "JBL Boombox 3 - portátil" readonly></td>
+                    <td><input type="text" name="desc1" value= "Redmi 60W" readonly></td>
                     <td><input type="number" name="qtd1" id="qtd1" value="0" min="0"></td>
-                    <td><input type="number" name="vl1" value="140.00" readonly></td>
+                    <td><input type="number" name="vl1" value="34.99" readonly></td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td><input type="checkbox" name="carregador2" id="carregador"></td>
-                    <td><input type="text" name="desc2" value="Liv Star - Bluetooth" readonly></td>
+                    <td><input type="text" name="desc2" value="Motorola 25W" readonly></td>
                     <td><input type="number" name="qtd2" id="qtd2" value="0" min="0"></td>
-                    <td><input type="number" name="vl2" value="91.74" readonly></td>
+                    <td><input type="number" name="vl2" value="49.90" readonly></td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td><input type="checkbox" name="carregador3" id="carregador"></td>
-                    <td><input type="text" name="desc3" value="C3 tech - Bluetooth" readonly></td>
+                    <td><input type="text" name="desc3" value="LG 10W" readonly></td>
                     <td><input type="number" name="qtd3" id="qtd3" value="0" min="0"></td>
-                    <td><input type="number" name="vl3" value="79.00" readonly></td>
+                    <td><input type="number" name="vl3" value="25.00" readonly></td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td><input type="checkbox" name="carregador4" id="carregador"></td>
-                    <td><input type="text" name="desc4" value="JBL Charge 5 " readonly></td>
+                    <td><input type="text" name="desc4" value="Apple 50W" readonly></td>
                     <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
-                    <td><input type="number" name="vl4" value="119.99" readonly></td>
+                    <td><input type="number" name="vl4" value="199.90" readonly></td>
                 </tr>
             </table>
             <input type="submit" name="compre">
