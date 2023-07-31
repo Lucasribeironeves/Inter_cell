@@ -4,17 +4,17 @@
     $i = 0;
     $ni=0;
     $valor_total=0;
-    $_SESSION["itens"] = array();
-    $_SESSION["valor_total"] = 0;
-    if(isset($_POST["compre"])){
-        $comprar = $_POST["compre"];
+    $_SESSION['itens'] = array();
+    $_SESSION['valor_total'] = 0;
+    if(isset($_POST['compre'])){
+        $comprar = $_POST['compre'];
 
         while($i < 4){
-            if(isset($_POST["pelicula". $i])){
+            if(isset($_POST['pelicula'. $i])){
                 $c=$ni;
-                $desc=$_POST["desc".$i];
-                $qtd=$_POST["qtd".$i];
-                $vl=$_POST["vl".$i];
+                $desc=$_POST['desc'.$i];
+                $qtd=$_POST['qtd'.$i];
+                $vl=$_POST['vl'.$i];
                 $valor_total+=$vl*$qtd;
                 $_SESSION['itens']=array_merge($_SESSION['itens'],
                 array($c=>array(
@@ -32,8 +32,7 @@
 
                 echo $i ."| Nome:". $_SESSION['itens'][$i]['desc'] . "| Valor:" . $_SESSION['itens'][$i]['vl'] . "| Quantidade:" . $_SESSION['itens'][$i]['qtd'] . "<br>";
             }
-
-
+            
             $ni++;
             */
         }
