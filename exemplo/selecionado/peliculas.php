@@ -16,7 +16,7 @@
                 $qtd=$_POST['qtd'.$i];
                 $vl=$_POST['vl'.$i];
                 $valor_total+=$vl*$qtd;
-                $_SESSION['itens']=array_merge($_SESSION['itens'],
+                $_SESSION['itens'] = array_merge($_SESSION['itens'],
                 array($c=>array(
                     'ni'=>$i, 'desc'=>$desc, 'qtd'=>$qtd, 'vl'=>$vl
                 )));
@@ -66,21 +66,21 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td><input type="checkbox" name="fone0" id="fone"></td>
+                <td><input type="checkbox" name="pelicula0" id="fone"></td>
                 <td><input type="text" name="desc0" value="Redmi Note 11" readonly></td>
                 <td><input type="number" name="qtd0" id="qtd0" value="0" min="0"></td>
                 <td><input type="text" name="vl0" value="15.00" readonly></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td><input type="checkbox" name="fone1" id="fone"></td>
+                <td><input type="checkbox" name="pelicula1" id="fone"></td>
                 <td><input type="text" name="desc1" value="Samsung S20 FE" readonly></td>
                 <td><input type="number" name="qtd1" id="qtd1" value="0" min="0"></td>
                 <td><input type="number" name="vl1" value="15.00" readonly></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td><input type="checkbox" name="fone2" id="fone"></td>
+                <td><input type="checkbox" name="pelicula2" id="fone"></td>
                 <td><input type="text" name="desc2" value="LG Nexus 5" readonly></td>
                 <td><input type="number" name="qtd2" id="qtd2" value="0" min="0"></td>
                 <td><input type="number" name="vl2" value="15.00" readonly></td>
@@ -94,7 +94,7 @@
             </tr>
             <tr>
                 <td>5</td>
-                <td><input type="checkbox" name="fone4" id="fone"></td>
+                <td><input type="checkbox" name="pelicula4" id="fone"></td>
                 <td><input type="text" name="desc4" value="Iphone 14 Pro Max" readonly></td>
                 <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
                 <td><input type="number" name="vl4" value="30.00" readonly></td>
