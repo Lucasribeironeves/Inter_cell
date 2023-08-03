@@ -6,8 +6,8 @@
     $valor_total=0;
     $_SESSION['itens'] = array();
     $_SESSION['valor_total'] = 0;
-    if(isset($_POST['compre'])){
-        $comprar = $_POST['compre'];
+    if(isset($_POST['selecione'])){
+        $selecione = $_POST['selecione'];
 
         while($i < 4){
             if(isset($_POST['pelicula'. $i])){
@@ -100,6 +100,6 @@
                 <td><input type="number" name="vl4" value="30.00" readonly></td>
             </tr>
         </table>
-        <input type="submit" name="compre">
+        <input type="submit" name="selecione" value = "Selecione">
     </form>
 </body>

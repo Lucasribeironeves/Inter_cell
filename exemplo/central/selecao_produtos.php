@@ -16,14 +16,11 @@
     }
     
     
-    
-    
     //botão comprar
     
     if(isset($_POST['compre'])){
         header("Location: ../central/login.php", true, 303);
     }
-
 
 ?>
 

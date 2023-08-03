@@ -4,17 +4,17 @@
     $i = 0;
     $ni=0;
     $valor_total=0;
-    $_SESSION["itens"] = array();
-    $_SESSION["valor_total"] = 0;
-    if(isset($_POST["compre"])){
-        $comprar = $_POST["compre"];
+    $_SESSION['itens'] = array();
+    $_SESSION['valor_total'] = 0;
+    if(isset($_POST['selecione'])){
+        $selecione = $_POST['selecione'];
 
         while($i < 4){
-            if(isset($_POST["fone". $i])){
+            if(isset($_POST['fone'. $i])){
                 $c=$ni;
-                $desc=$_POST["desc".$i];
-                $qtd=$_POST["qtd".$i];
-                $vl=$_POST["vl".$i];
+                $desc=$_POST['desc'.$i];
+                $qtd=$_POST['qtd'.$i];
+                $vl=$_POST['vl'.$i];
                 $valor_total+=$vl*$qtd;
                 $_SESSION['itens']=array_merge($_SESSION['itens'],
                 array($c=>array(
@@ -101,6 +101,6 @@
                 <td><input type="number" name="vl4" value="900.00" readonly></td>
             </tr>
         </table>
-        <input type="submit" name="compre">
+        <input type="submit" name="selecione" value = "Selecione">
     </form>
 </body>
