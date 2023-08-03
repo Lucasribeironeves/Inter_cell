@@ -2,7 +2,7 @@
     session_start();
     $i=0;
     foreach($_SESSION['itens'] as $item){
-        echo $i ."| Nome:". $item['desc'] . "| Valor:" . $item['vl'] . "| Quantidade:" . $item['qtd'] . "<br>";
+        echo $i . " | Nome: " . $item['desc'] . " | Valor: " . $item['vl'] . " | Quantidade: " . $item['qtd'] . " <br> ";
         $i++;
     }
     echo "Valor toal: R$". $_SESSION['valor_total'];

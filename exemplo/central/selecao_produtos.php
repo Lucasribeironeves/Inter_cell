@@ -1,4 +1,29 @@
 <?php
+    if(isset($_POST['capinhas'])){
+        header("Location: ../selecionado/capinhas.php", true, 303);
+    }
+    if(isset($_POST['fones'])){
+        header("Location: ../selecionado/fones.php", true, 303);
+    }
+    if(isset($_POST['peliculas'])){
+        header("Location: ../selecionado/peliculas.php", true, 303);
+    }
+    if(isset($_POST['caixa'])){
+        header("Location: ../selecionado/caixa_de_som.php", true, 303);
+    }
+    if(isset($_POST['carregador'])){
+        header("Location: ../selecionado/carregadores.php", true, 303);
+    }
+    
+    
+    
+    
+    //botão comprar
+    
+    if(isset($_POST['compre'])){
+        header("Location: ../central/login.php", true, 303);
+    }
+
 
 ?>
 
@@ -38,7 +63,7 @@
             </tr>
         </table><br>
 
-        <input type="submit" value="Comprar" name="compre">
+        <input type="submit" value="Finalizar" name="compre">
     </form>
 </body>
 </html>
