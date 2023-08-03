@@ -33,6 +33,9 @@
             <tr>
                 <td><input type="submit" value="Carregadores" name="carregador"></td>
             </tr>
+            <tr>
+                <td><input type="submit" value="Caixa de som" name="caixa"></td>
+            </tr>
         </table><br>
 
         <input type="submit" value="Comprar" name="compre">
