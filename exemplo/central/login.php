@@ -1,8 +1,12 @@
 <?php 
     session_start();
     $i=0;
-    foreach($_SESSION['itens'] as $item){
-        echo $i . " | Nome: " . $item['desc'] . " | Valor: " . $item['vl'] . " | Quantidade: " . $item['qtd'] . " <br> ";
+    foreach($_SESSION['selec'] as $selecionados){
+        echo $selecionados['caixa'] . 
+        $selecionados['capas'] . 
+        $selecionados['car'] . 
+        $selecionados['fon'] . 
+        $selecionados['pelic'];
         $i++;
     }
     echo "Valor toal: R$". $_SESSION['valor_total'];
