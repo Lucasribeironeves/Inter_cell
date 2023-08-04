@@ -4,7 +4,7 @@
     $i = 0;
     $ni = 0;
     $valor_total = 0;
-    $_SESSION['fon'] = array();
+    $_SESSION['item'] = array();
     $_SESSION['valor_total'] = 0;
     if(isset($_POST['selecione'])){
         $selecione = $_POST['selecione'];
@@ -17,7 +17,7 @@
                 $vl = $_POST['vl'.$i];
                 $valor_total += ($vl*$qtd);
 
-                $_SESSION['fon'] = array_merge($_SESSION['fon'],
+                $_SESSION['item'] = array_merge($_SESSION['item'],
                 array($c => array(
                     'ni'=> $i, 
                     'desc'=> $desc, 
@@ -26,6 +26,8 @@
                 )));
 
                 $ni++;
+            }else{
+                echo 'Produto não selecionado';
             }
             $i++;
         }

@@ -1,14 +1,5 @@
 <?php 
-    session_start();
-    $i=0;
-    foreach($_SESSION['selec'] as $selecionados){
-        echo $selecionados['caixa'] . 
-        $selecionados['capas'] . 
-        $selecionados['car'] . 
-        $selecionados['fon'] . 
-        $selecionados['pelic'];
-        $i++;
-    }
+    
     echo "Valor toal: R$". $_SESSION['valor_total'];
 ?>
 <!DOCTYPE html>

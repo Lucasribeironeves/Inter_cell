@@ -16,21 +16,15 @@
         header("Location: ../selecionado/carregadores.php", true, 303);
     }
 
-    
-    //área de união das seções
     session_start();
-
-    $_SESSION['selec'] = array();
-    $_SESSION['selec'] = array_merge($_SESSION['selec'],
-    array( 
-        'caixa' => $_SESSION['caixa'], 
-        'capas' => $_SESSION['capas'], 
-        'car' => $_SESSION['car'], 
-        'fon' => $_SESSION['fon'],
-        'pelic' => $_SESSION['pelic'] 
-    ));
+    $i=0;
+    foreach($_SESSION['item'] as $item){
+        echo $i . ' | Nome: ' . $item['desc'] . 
+        ' | Valor: ' . $item['vl'] . 
+        ' | Quantidade: ' . $item['qtd'] . '<br>';
+        $i++;
+    }
     
-
     //botão comprar
     if(isset($_POST['finalizar'])){
         header("Location: ../central/login.php", true, 303);
