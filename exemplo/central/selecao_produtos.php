@@ -17,7 +17,8 @@
     }
 
     session_start();
-    $i=0;
+    $i = 0;
+
     foreach($_SESSION['item'] as $item){
         echo $i . ' | Nome: ' . $item['desc'] . 
         ' | Valor: ' . $item['vl'] . 
