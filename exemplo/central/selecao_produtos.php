@@ -1,4 +1,5 @@
 <?php
+    //botões dos produtos por tipo
     if(isset($_POST['capinhas'])){
         header("Location: ../selecionado/capinhas.php", true, 303);
     }
@@ -14,11 +15,19 @@
     if(isset($_POST['carregador'])){
         header("Location: ../selecionado/carregadores.php", true, 303);
     }
+
+    //área de união das seções
+    session_start();
+
+    $_SESSION['selec'] = array();
+    $_SESSION['selec'] = foreach(){
+        
+    }
     
-    
+
+
     //botão comprar
-    
-    if(isset($_POST['compre'])){
+    if(isset($_POST['finalizar'])){
         header("Location: ../central/login.php", true, 303);
     }
 
@@ -60,7 +69,7 @@
             </tr>
         </table><br>
 
-        <input type="submit" value="Finalizar" name="compre">
+        <input type="submit" value="Finalizar" name="finalizar">
     </form>
 </body>
 </html>

@@ -3,30 +3,34 @@
 session_start();
     
     $i = 0;
-    $ni=0;
-    $valor_total=0;
-    $_SESSION['itens'] = array();
+    $ni = 0;
+    $valor_total = 0;
+    $_SESSION['caixa'] = array();
     $_SESSION['valor_total'] = 0;
     if(isset($_POST['selecione'])){
         $selecione = $_POST['selecione'];
 
         while($i < 4){
             if(isset($_POST['caixa'. $i])){
-                $c=$ni;
-                $desc=$_POST['desc'.$i];
-                $qtd=$_POST['qtd'.$i];
-                $vl=$_POST['vl'.$i];
-                $valor_total+=$vl*$qtd;
-                $_SESSION['itens']=array_merge($_SESSION['itens'],
-                array($c=>array(
-                    'ni'=>$i, 'desc'=>$desc, 'qtd'=>$qtd, 'vl'=>$vl
+                $c = $ni;
+                $desc = $_POST['desc'.$i];
+                $qtd = $_POST['qtd'.$i];
+                $vl = $_POST['vl'.$i];
+                $valor_total += ($vl*$qtd);
+
+                $_SESSION['caixa'] = array_merge($_SESSION['caixa'],
+                array($c => array(
+                    'ni'=> $i, 
+                    'desc'=> $desc, 
+                    'qtd'=> $qtd, 
+                    'vl'=> $vl
                 )));
 
                 $ni++;
             }
             $i++;
         }
-        if($ni>0) {
+        if($ni > 0) {
             $_SESSION['valor_total'] = $valor_total;
             header("Location: ../central/selecao_produtos.php", true, 303);
             /*for ($i=0; $i < $ni; $i++) { 
@@ -39,8 +43,8 @@ session_start();
             */
         }
     }
-    echo "Valor Total: ".$valor_total;
 
+    //echo "Valor Total: ".$valor_total;
     ?>
 
     <!DOCTYPE html>

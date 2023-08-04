@@ -6,8 +6,6 @@
         $i++;
     }
     echo "Valor toal: R$". $_SESSION['valor_total'];
-
-
 ?>
 <!DOCTYPE html>
 <html>

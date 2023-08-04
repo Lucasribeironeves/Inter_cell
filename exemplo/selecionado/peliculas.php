@@ -2,23 +2,27 @@
     session_start();
     
     $i = 0;
-    $ni=0;
-    $valor_total=0;
-    $_SESSION['itens'] = array();
+    $ni = 0;
+    $valor_total = 0;
+    $_SESSION['pelic'] = array();
     $_SESSION['valor_total'] = 0;
     if(isset($_POST['selecione'])){
         $selecione = $_POST['selecione'];
 
         while($i < 4){
             if(isset($_POST['pelicula'. $i])){
-                $c=$ni;
-                $desc=$_POST['desc'.$i];
-                $qtd=$_POST['qtd'.$i];
-                $vl=$_POST['vl'.$i];
-                $valor_total+=$vl*$qtd;
-                $_SESSION['itens'] = array_merge($_SESSION['itens'],
-                array($c=>array(
-                    'ni'=>$i, 'desc'=>$desc, 'qtd'=>$qtd, 'vl'=>$vl
+                $c = $ni;
+                $desc = $_POST['desc'.$i];
+                $qtd = $_POST['qtd'.$i];
+                $vl = $_POST['vl'.$i];
+                $valor_total += ($vl*$qtd);
+
+                $_SESSION['pelic'] = array_merge($_SESSION['pelic'],
+                array($c => array(
+                    'ni'=> $i, 
+                    'desc'=> $desc, 
+                    'qtd'=> $qtd, 
+                    'vl'=> $vl
                 )));
 
                 $ni++;
