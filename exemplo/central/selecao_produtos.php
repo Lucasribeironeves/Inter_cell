@@ -19,10 +19,38 @@
     session_start();
     $i = 0;
 
-    foreach($_SESSION['item'] as $item){
-        echo $i . ' | Nome: ' . $item['desc'] . 
-        ' | Valor: ' . $item['vl'] . 
-        ' | Quantidade: ' . $item['qtd'] . '<br>';
+    foreach($_SESSION['peliculas'] as $peliculas){
+        echo $i . ' | Película: ' . $peliculas['desc'] . 
+        ' | Valor: ' . $peliculas['vl'] . 
+        ' | Quantidade: ' . $peliculas['qtd'] . '<br>';
+        $i++;
+    }
+
+    foreach($_SESSION['capinhas'] as $capinhas){
+        echo $i . ' | Capinha: ' . $capinhas['desc'] . 
+        ' | Valor: ' . $capinhas['vl'] . 
+        ' | Quantidade: ' . $capinhas['qtd'] . '<br>';
+        $i++;
+    }
+
+    foreach($_SESSION['caixas'] as $caixas){
+        echo $i . ' | Caixa de som: ' . $caixas['desc'] . 
+        ' | Valor: ' . $caixas['vl'] . 
+        ' | Quantidade: ' . $caixas['qtd'] . '<br>';
+        $i++;
+    }
+
+    foreach($_SESSION['fones'] as $fones){
+        echo $i . ' | Fone de ouvido: ' . $fones['desc'] . 
+        ' | Valor: ' . $fones['vl'] . 
+        ' | Quantidade: ' . $fones['qtd'] . '<br>';
+        $i++;
+    }
+
+    foreach($_SESSION['carregadores'] as $carregadores){
+        echo $i . ' | Carregador: ' . $carregadores['desc'] . 
+        ' | Valor: ' . $carregadores['vl'] . 
+        ' | Quantidade: ' . $carregadores['qtd'] . '<br>';
         $i++;
     }
     

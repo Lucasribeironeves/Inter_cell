@@ -4,7 +4,7 @@
     $i = 0;
     $ni = 0;
     $valor_total = 0;
-    $_SESSION['item'] = array();
+    $_SESSION['peliculas'] = array();
     $_SESSION['valor_total'] = 0;
     if(isset($_POST['selecione'])){
         $selecione = $_POST['selecione'];
@@ -15,9 +15,9 @@
                 $desc = $_POST['desc'.$i];
                 $qtd = $_POST['qtd'.$i];
                 $vl = $_POST['vl'.$i];
-                $valor_total += ($vl*$qtd);
-
-                $_SESSION['item'] = array_merge($_SESSION['item'],
+                //$valor_total += ($vl * $qtd);
+                
+                $_SESSION['peliculas'] = array_merge($_SESSION['peliculas'],
                 array($c => array(
                     'ni'=> $i, 
                     'desc'=> $desc, 
@@ -26,25 +26,18 @@
                 )));
 
                 $ni++;
-            }else{
-                echo 'Produto não selecionado';
             }
+
             $i++;
         }
-        if($ni>0) {
-            $_SESSION['valor_total'] = $valor_total;
-            header("Location: ../central/selecao_produtos.php", true, 303);
-            /*for ($i=0; $i < $ni; $i++) { 
 
-                echo $i ."| Nome:". $_SESSION['itens'][$i]['desc'] . "| Valor:" . $_SESSION['itens'][$i]['vl'] . "| Quantidade:" . $_SESSION['itens'][$i]['qtd'] . "<br>";
-            }
-            
-            $ni++;
-            */
+        if($ni > 0) {
+            header("Location: ../central/selecao_produtos.php", true, 303);  
+            //$_SESSION['valor_total'] = $valor_total;
         }
     }
-    echo "Valor Total: ".$valor_total;
-
+    //echo "Valor Total: ".$valor_total;
+    
 ?>
 
 <!DOCTYPE html>
