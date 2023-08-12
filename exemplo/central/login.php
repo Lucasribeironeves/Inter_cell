@@ -1,6 +1,28 @@
 <?php 
     session_start();
-    $i = 0;
+    $i = 1;
+    $logar = '';
+
+    $_SESSION['login'] = "";
+
+    if(isset($_POST['logar'])){
+        $logar = $_POST['logar'];
+
+        if(isset($_POST['nome']) && isset($_POST['endereco']) && isset($_POST['telefone'])
+        && isset($_POST['email']) && isset($_POST['senha'])){
+
+            $_SESSION['login'] = array(
+                'nome' => $_POST['nome'],
+                'endereco' => $_POST['endereco'],
+                'telefone' => $_POST['telefone'],
+                'email' => $_POST['email']
+            ); 
+
+            header("Location: ../central/forma_pagamento.php", true, 303);
+        }
+
+    }
+    
 
     //echo "Valor toal: R$". $_SESSION['valor_total'];
 ?>
@@ -134,7 +156,7 @@
             </tr>
             <tr>
                 <td>Telefone:</td>
-                <td><input type="text" name="telefone" id="telefone"></td>
+                <td><input type="number" name="telefone" id="telefone"></td>
             </tr>
             <tr>
                 <td>Email:</td>
@@ -145,7 +167,7 @@
                 <td><input type="text" name="senha" id="senha"></td>
             </tr>
         </table><br>
-        <input type="submit" value="Confirmar">
+        <input type="submit" name="logar" value="Logar">
     </form>
 
     

@@ -20,7 +20,7 @@
     }
 
     session_start();
-    $i = 0;
+    $i = 1;
 ?>
 
 <!DOCTYPE html>
