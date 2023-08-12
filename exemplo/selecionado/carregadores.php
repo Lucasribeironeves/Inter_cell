@@ -10,7 +10,7 @@ session_start();
     if(isset($_POST['selecione'])){
         $selecione = $_POST['selecione'];
 
-        while($i < 4){
+        while($i <= 4){
             if(isset($_POST['carregador'. $i])){
                 $c = $ni;
                 $desc = $_POST['desc'.$i];
