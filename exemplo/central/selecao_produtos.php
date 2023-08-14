@@ -151,9 +151,16 @@
 
                 }
 
+            echo '<tr>
+                    <th>Valor total</th>
+                    <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
+                </tr>';
+
             echo 
             '</table><br>';
-            echo $_SESSION['valor_total'];
+
+
+            //echo $_SESSION['valor_total'];
 
         }else{
             echo "Selecione algo :)";

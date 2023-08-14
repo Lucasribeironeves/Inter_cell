@@ -20,8 +20,7 @@
         }
 
     }
-    
-    echo "Valor total: R$". $_SESSION['valor_total'];
+    //echo "Valor total: R$". $_SESSION['valor_total'];
 ?>
 
 <!DOCTYPE html>
@@ -145,7 +144,13 @@
         $i++;
                 }
             }
+ 
+            echo '<tr>
+                    <th>Valor total</th>
+                    <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
+                </tr>';
         ?>
+
     </table><br>
 
     <form action="login.php" method="post">
@@ -168,7 +173,5 @@
         </table><br>
         <input type="submit" name="logar" value="Logar">
     </form>
-
-    
 </body>
 </html>

@@ -25,7 +25,6 @@ $i = 1;
                 <th>Tipo</th>
                 <th>Informado</th>
             </tr>
-
             <tr>
                 <td>Nome</td>
                 <td><?php echo $_SESSION['login']['nome'] ?></td>
@@ -74,7 +73,7 @@ $i = 1;
 
         <!-- Exibição das películas -->
         <?php 
-            if($_SESSION['peliculas']){
+            if(isset($_SESSION['peliculas'])){
                 foreach($_SESSION['peliculas'] as $peliculas){
         ?>
 
@@ -150,6 +149,12 @@ $i = 1;
         $i++;
                 }
             }
+
+            echo '<tr>
+                    <th>Valor total</th>
+                    <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
+                </tr>';
+
         ?>
     </table><br>
 
