@@ -61,108 +61,90 @@
 
         <input type="submit" value="Finalizar" name="finalizar">
     </form><br>
+    
+    <?php 
 
-    <table>
-        <tr>
-            <th colspan="5">Itens selecionados</th>
-        </tr>
-        <tr>
-            <th>Indíce</th>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
-            <th>Valor</th>
-        </tr>
+        if(isset($_SESSION['capinhas']) || isset($_SESSION['fones']) || isset($_SESSION['peliculas'])
+        || isset($_SESSION['caixa']) || isset($_SESSION['carregador'])){
+            echo 
+            '<table>
+                <tr>
+                    <th colspan="5">Itens selecionados</th>
+                </tr>
+                <tr>
+                    <th>Indíce</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>';
 
-        <!-- Exibição das capinhas -->
-        <?php 
-            foreach($_SESSION['capinhas'] as $capinhas){
-        ?>
+                foreach($_SESSION['capinhas'] as $capinhas){
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Capinha" ?></td>
-                <td><?php echo $capinhas['desc']; ?></td>
-                <td><?php echo $capinhas['qtd']; ?></td>
-                <td><?php echo $capinhas['vl']; ?></td>
-            </tr>
-        
-        <?php 
-        $i++;
-            }
-        ?>
+                    echo '<tr>
+                            <td>' . $i . '</td>
+                            <td> Capinha </td>
+                            <td>' . $capinhas['desc'] . '</td>
+                            <td>' . $capinhas['qtd'] . '</td>
+                            <td>' . $capinhas['vl'] . '</td>
+                        </tr>';
+                $i++;    
+                }
 
-        <!-- Exibição das películas -->
-        <?php 
-            foreach($_SESSION['peliculas'] as $peliculas){
-        ?>
+                foreach($_SESSION['peliculas'] as $peliculas){
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Película" ?></td>
-                <td><?php echo $peliculas['desc']; ?></td>
-                <td><?php echo $peliculas['qtd']; ?></td>
-                <td><?php echo $peliculas['vl']; ?></td>
-            </tr>
-        
-        <?php 
-        $i++;
-            }
-        ?>
+                    echo '<tr>
+                            <td>' . $i . '</td>
+                            <td> Película </td>
+                            <td>' . $peliculas['desc'] . '</td>
+                            <td>' . $peliculas['qtd'] . '</td>
+                            <td>' . $peliculas['vl']. '</td>
+                        </tr>';
+                $i++;
+                }
 
-        <!-- Exibição dos fones de ouvido -->
-        <?php 
-            foreach($_SESSION['fones'] as $fones){
-        ?>
+                foreach($_SESSION['fones'] as $fones){
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Fone de ouvido" ?></td>
-                <td><?php echo $fones['desc']; ?></td>
-                <td><?php echo $fones['qtd']; ?></td>
-                <td><?php echo $fones['vl']; ?></td>
-            </tr>
-        
-        <?php
-        $i++; 
-            }
-        ?>
+                    echo '<tr>
+                            <td>' . $i . '</td>
+                            <td> Fone </td>
+                            <td>' . $fones['desc'] . '</td>
+                            <td>' . $fones['qtd'] . '</td>
+                            <td>' . $fones['vl']. '</td>
+                        </tr>';
+                $i++;
+                }
 
-        <!-- Exibição dos carregadores -->
-        <?php 
-            foreach($_SESSION['carregadores'] as $carregadores){
-        ?>
+                foreach($_SESSION['carregadores'] as $carregadores){
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Carregador" ?></td>
-                <td><?php echo $carregadores['desc']; ?></td>
-                <td><?php echo $carregadores['qtd']; ?></td>
-                <td><?php echo $carregadores['vl']; ?></td>
-            </tr>
-        
-        <?php 
-        $i++;
-            }
-        ?>
+                    echo '<tr>
+                            <td>' . $i . '</td>
+                            <td> Carregador </td>
+                            <td>' . $carregadores['desc'] . '</td>
+                            <td>' . $carregadores['qtd'] . '</td>
+                            <td>' . $carregadores['vl']. '</td>
+                        </tr>';
+                $i++;
+                }
 
-        <!-- Exibição das caixas de som -->
-        <?php 
-            foreach($_SESSION['caixas'] as $caixas){
-        ?>
+                foreach($_SESSION['caixas'] as $caixas){
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Caixas de som" ?></td>
-                <td><?php echo $caixas['desc']; ?></td>
-                <td><?php echo $caixas['qtd']; ?></td>
-                <td><?php echo $caixas['vl']; ?></td>
-            </tr>
-        
-        <?php 
-        $i++;
-            }
-        ?>
-    </table>
+                    echo '<tr>
+                            <td>' . $i . '</td>
+                            <td> Caixas de som </td>
+                            <td>' . $caixas['desc'] . '</td>
+                            <td>' . $caixas['qtd'] . '</td>
+                            <td>' . $caixas['vl'] . '</td>
+                        </tr>';
+                $i++;
+                }
+
+                echo 
+                    '</table>';
+
+        }
+    
+    ?>
+    
 </body>
 </html>

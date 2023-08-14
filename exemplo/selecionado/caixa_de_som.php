@@ -28,6 +28,7 @@ session_start();
 
                 $ni++;
             }
+
             $i++;
         }
 
