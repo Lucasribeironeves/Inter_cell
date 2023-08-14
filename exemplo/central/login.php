@@ -21,7 +21,7 @@
 
     }
     
-    //echo "Valor toal: R$". $_SESSION['valor_total'];
+    echo "Valor total: R$". $_SESSION['valor_total'];
 ?>
 
 <!DOCTYPE html>

@@ -30,7 +30,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Carrinho de compras</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../selecaocss.css'>
     <script src='main.js'></script>
 </head>
 <body>
@@ -65,7 +65,8 @@
     <?php 
 
         if(isset($_SESSION['capinhas']) || isset($_SESSION['fones']) || isset($_SESSION['peliculas'])
-        || isset($_SESSION['caixa']) || isset($_SESSION['carregador'])){
+        || isset($_SESSION['caixas']) || isset($_SESSION['carregador'])){
+
             echo 
             '<table>
                 <tr>
@@ -147,11 +148,15 @@
                             </tr>';
                     $i++;
                     }
+
                 }
 
-                echo 
-                    '</table>';
+            echo 
+            '</table><br>';
+            echo $_SESSION['valor_total'];
 
+        }else{
+            echo "Selecione algo :)";
         }
 
         //session_destroy();

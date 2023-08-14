@@ -5,7 +5,7 @@
     $ni = 0;
     $valor_total = 0;
     $_SESSION['peliculas'] = array();
-    $_SESSION['valor_total'] = 0;
+    
     if(isset($_POST['selecione'])){
         $selecione = $_POST['selecione'];
 
@@ -15,7 +15,7 @@
                 $desc = $_POST['desc'.$i];
                 $qtd = $_POST['qtd'.$i];
                 $vl = $_POST['vl'.$i];
-                //$valor_total += ($vl * $qtd);
+                $valor_total += ($vl * $qtd);
                 
                 $_SESSION['peliculas'] = array_merge($_SESSION['peliculas'],
                 array($c => array(
@@ -32,8 +32,8 @@
         }
 
         if($ni > 0) {
+            $_SESSION['valor_total'] += $valor_total;
             header("Location: ../central/selecao_produtos.php", true, 303);  
-            //$_SESSION['valor_total'] = $valor_total;
         }
     }
     //echo "Valor Total: ".$valor_total;

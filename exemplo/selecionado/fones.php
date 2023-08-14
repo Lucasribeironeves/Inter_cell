@@ -5,7 +5,6 @@
     $ni = 0;
     $valor_total = 0;
     $_SESSION['fones'] = array();
-    $_SESSION['valor_total'] = 0;
     if(isset($_POST['selecione'])){
         $selecione = $_POST['selecione'];
 
@@ -15,7 +14,7 @@
                 $desc = $_POST['desc'.$i];
                 $qtd = $_POST['qtd'.$i];
                 $vl = $_POST['vl'.$i];
-                //$valor_total += ($vl*$qtd);
+                $valor_total += ($vl*$qtd);
 
                 $_SESSION['fones'] = array_merge($_SESSION['fones'],
                 array($c => array(
@@ -31,7 +30,7 @@
         }
         if($ni > 0) {
             header("Location: ../central/selecao_produtos.php", true, 303);
-            //$_SESSION['valor_total'] = $valor_total;
+            $_SESSION['valor_total'] += $valor_total;
             
         }
     }
