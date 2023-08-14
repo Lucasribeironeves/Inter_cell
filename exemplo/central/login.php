@@ -53,6 +53,7 @@
 
         <!-- Exibição das capinhas -->
         <?php 
+        if (isset($_SESSION['capinhas'])) {
             foreach($_SESSION['capinhas'] as $capinhas){
         ?>
 
@@ -65,12 +66,14 @@
             </tr>
         
         <?php 
-        $i++;
+            $i++;
             }
+        }
         ?>
 
         <!-- Exibição das películas -->
         <?php 
+        if (isset($_SESSION['peliculas'])) {
             foreach($_SESSION['peliculas'] as $peliculas){
         ?>
 
@@ -85,10 +88,12 @@
         <?php 
         $i++;
             }
+        }
         ?>
 
         <!-- Exibição dos fones de ouvido -->
         <?php 
+        if (isset($_SESSION['fones'])) {
             foreach($_SESSION['fones'] as $fones){
         ?>
 
@@ -103,10 +108,12 @@
         <?php
         $i++; 
             }
+        }
         ?>
 
         <!-- Exibição dos carregadores -->
         <?php 
+        if (isset($_SESSION['carregadores'])) {
             foreach($_SESSION['carregadores'] as $carregadores){
         ?>
 
@@ -121,10 +128,12 @@
         <?php 
         $i++;
             }
+        }
         ?>
 
         <!-- Exibição das caixas de som -->
         <?php 
+        if (isset($_SESSION['caixas'])) {
             foreach($_SESSION['caixas'] as $caixas){
         ?>
 
@@ -139,6 +148,7 @@
         <?php 
         $i++;
             }
+        }
         ?>
     </table><br>
 
