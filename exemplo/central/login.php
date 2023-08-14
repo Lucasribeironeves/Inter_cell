@@ -15,7 +15,8 @@
                 'nome' => $_POST['nome'],
                 'endereco' => $_POST['endereco'],
                 'telefone' => $_POST['telefone'],
-                'email' => $_POST['email']
+                'email' => $_POST['email'],
+                'senha' => $_POST['senha']
             ); 
 
             header("Location: ../central/forma_pagamento.php", true, 303);

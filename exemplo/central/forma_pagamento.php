@@ -1,3 +1,9 @@
+<?php 
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +15,34 @@
     <script src='main.js'></script>
 </head>
 <body>
+    <!-- Exibição dos dados do usuário -->
+    <table>
+            <tr>
+                <th colspan="2">Dados do usuário ;D</th>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <th>Informado</th>
+            </tr>
+
+            <tr>
+                <td>Nome</td>
+                <td><?php echo $_SESSION['login']['nome'] ?></td>
+            </tr>
+            <tr>
+                <td>Endereço</td>
+                <td><?php echo $_SESSION['login']['endereco'] ?></td>
+            </tr>
+            <tr>
+                <td>Telefone</td>
+                <td><?php echo $_SESSION['login']['telefone'] ?></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><?php echo $_SESSION['login']['email'] ?></td>
+            </tr>
+    </table><br>
+
     <form action="forma_pagamento.php" method="post">
         <table>
             <tr>
@@ -23,7 +57,7 @@
                 <td>Pix</td>
             </tr>
             <tr>
-                <td><input type="radio" name="opcoes" id="a_visita" value="avisita"></td>
+                <td><input type="radio" name="opcoes" id="a_vista" value="avista"></td>
                 <td>Á vista</td>
             </tr>
         </table><br>
