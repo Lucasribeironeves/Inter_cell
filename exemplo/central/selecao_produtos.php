@@ -21,7 +21,6 @@
 
     session_start();
     $i = 1;
-    
 ?>
 
 <!DOCTYPE html>
@@ -77,13 +76,11 @@
 
         <!-- Exibição das capinhas -->
         <?php 
-        if (isset($_SESSION['capinhas'])) {
-            # code...
             foreach($_SESSION['capinhas'] as $capinhas){
-                ?>
+        ?>
 
-<tr>
-    <td><?php echo $i ?></td>
+            <tr>
+                <td><?php echo $i ?></td>
                 <td><?php echo "Capinha" ?></td>
                 <td><?php echo $capinhas['desc']; ?></td>
                 <td><?php echo $capinhas['qtd']; ?></td>
@@ -92,13 +89,11 @@
         
         <?php 
         $i++;
-       }
-    }
+            }
         ?>
 
         <!-- Exibição das películas -->
         <?php 
-        if (isset($_SESSION['peliculas'])) {
             foreach($_SESSION['peliculas'] as $peliculas){
         ?>
 
@@ -111,14 +106,12 @@
             </tr>
         
         <?php 
-            $i++;
+        $i++;
             }
-        }
         ?>
 
         <!-- Exibição dos fones de ouvido -->
         <?php 
-        if (isset($_SESSION['fones'])) {
             foreach($_SESSION['fones'] as $fones){
         ?>
 
@@ -131,14 +124,12 @@
             </tr>
         
         <?php
-            $i++; 
+        $i++; 
             }
-        }
         ?>
 
         <!-- Exibição dos carregadores -->
         <?php 
-        if (isset($_SESSION['carregadores'])) {
             foreach($_SESSION['carregadores'] as $carregadores){
         ?>
 
@@ -151,14 +142,12 @@
             </tr>
         
         <?php 
-            $i++;
+        $i++;
             }
-        }
         ?>
 
         <!-- Exibição das caixas de som -->
         <?php 
-        if (isset($_SESSION['caixas'])) {
             foreach($_SESSION['caixas'] as $caixas){
         ?>
 
@@ -171,10 +160,8 @@
             </tr>
         
         <?php 
-            $i++;
+        $i++;
             }
-            //session_destroy();
-        }
         ?>
     </table>
 </body>
