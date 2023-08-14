@@ -8,15 +8,12 @@
     if(isset($_POST['logar'])){
         $logar = $_POST['logar'];
 
-        if(isset($_POST['nome']) && isset($_POST['endereco']) && isset($_POST['telefone'])
-        && isset($_POST['email']) && isset($_POST['senha'])){
+        if(isset($_POST['nome']) && isset($_POST['endereco']) && isset($_POST['telefone'])){
 
             $_SESSION['login'] = array(
                 'nome' => $_POST['nome'],
                 'endereco' => $_POST['endereco'],
-                'telefone' => $_POST['telefone'],
-                'email' => $_POST['email'],
-                'senha' => $_POST['senha']
+                'telefone' => $_POST['telefone']
             ); 
 
             header("Location: ../central/forma_pagamento.php", true, 303);
@@ -24,7 +21,6 @@
 
     }
     
-
     //echo "Valor toal: R$". $_SESSION['valor_total'];
 ?>
 
@@ -53,7 +49,8 @@
 
         <!-- Exibição das capinhas -->
         <?php 
-            foreach($_SESSION['capinhas'] as $capinhas){
+            if(isset($_SESSION['capinhas'])){
+                foreach($_SESSION['capinhas'] as $capinhas){
         ?>
 
             <tr>
@@ -66,12 +63,14 @@
         
         <?php 
         $i++;
+                }
             }
         ?>
 
         <!-- Exibição das películas -->
-        <?php 
-            foreach($_SESSION['peliculas'] as $peliculas){
+        <?php
+            if(isset($_SESSION['peliculas'])){ 
+                foreach($_SESSION['peliculas'] as $peliculas){
         ?>
 
             <tr>
@@ -84,12 +83,14 @@
         
         <?php 
         $i++;
+                }
             }
         ?>
 
         <!-- Exibição dos fones de ouvido -->
         <?php 
-            foreach($_SESSION['fones'] as $fones){
+            if(isset($_SESSION['fones'])){
+                foreach($_SESSION['fones'] as $fones){
         ?>
 
             <tr>
@@ -102,12 +103,14 @@
         
         <?php
         $i++; 
+                }
             }
         ?>
 
         <!-- Exibição dos carregadores -->
-        <?php 
-            foreach($_SESSION['carregadores'] as $carregadores){
+        <?php
+            if(isset($_SESSION['carregadores'])){ 
+                foreach($_SESSION['carregadores'] as $carregadores){
         ?>
 
             <tr>
@@ -120,12 +123,14 @@
         
         <?php 
         $i++;
+                }
             }
         ?>
 
         <!-- Exibição das caixas de som -->
         <?php 
-            foreach($_SESSION['caixas'] as $caixas){
+            if(isset($_SESSION['caixas'])){
+                foreach($_SESSION['caixas'] as $caixas){
         ?>
 
             <tr>
@@ -138,6 +143,7 @@
         
         <?php 
         $i++;
+                }
             }
         ?>
     </table><br>
@@ -158,14 +164,6 @@
             <tr>
                 <td>Telefone:</td>
                 <td><input type="number" name="telefone" id="telefone"></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="text" name="email" id="email"></td>
-            </tr>
-            <tr>
-                <td>Senha:</td>
-                <td><input type="text" name="senha" id="senha"></td>
             </tr>
         </table><br>
         <input type="submit" name="logar" value="Logar">

@@ -79,70 +79,82 @@
                     <th>Valor</th>
                 </tr>';
 
-                foreach($_SESSION['capinhas'] as $capinhas){
+                if(isset($_SESSION['capinhas'])){
+                    foreach($_SESSION['capinhas'] as $capinhas){
 
-                    echo '<tr>
-                            <td>' . $i . '</td>
-                            <td> Capinha </td>
-                            <td>' . $capinhas['desc'] . '</td>
-                            <td>' . $capinhas['qtd'] . '</td>
-                            <td>' . $capinhas['vl'] . '</td>
-                        </tr>';
-                $i++;    
+                        echo '<tr>
+                                <td>' . $i . '</td>
+                                <td> Capinha </td>
+                                <td>' . $capinhas['desc'] . '</td>
+                                <td>' . $capinhas['qtd'] . '</td>
+                                <td>' . $capinhas['vl'] . '</td>
+                            </tr>';
+                    $i++;    
+                    }
                 }
 
-                foreach($_SESSION['peliculas'] as $peliculas){
+                if(isset($_SESSION['peliculas'])){
+                    foreach($_SESSION['peliculas'] as $peliculas){
 
-                    echo '<tr>
-                            <td>' . $i . '</td>
-                            <td> Película </td>
-                            <td>' . $peliculas['desc'] . '</td>
-                            <td>' . $peliculas['qtd'] . '</td>
-                            <td>' . $peliculas['vl']. '</td>
-                        </tr>';
-                $i++;
+                        echo '<tr>
+                                <td>' . $i . '</td>
+                                <td> Película </td>
+                                <td>' . $peliculas['desc'] . '</td>
+                                <td>' . $peliculas['qtd'] . '</td>
+                                <td>' . $peliculas['vl']. '</td>
+                            </tr>';
+                    $i++;
+                    }
                 }
 
-                foreach($_SESSION['fones'] as $fones){
+                if(isset($_SESSION['fones'])){
+                    foreach($_SESSION['fones'] as $fones){
 
-                    echo '<tr>
-                            <td>' . $i . '</td>
-                            <td> Fone </td>
-                            <td>' . $fones['desc'] . '</td>
-                            <td>' . $fones['qtd'] . '</td>
-                            <td>' . $fones['vl']. '</td>
-                        </tr>';
-                $i++;
+                        echo '<tr>
+                                <td>' . $i . '</td>
+                                <td> Fone </td>
+                                <td>' . $fones['desc'] . '</td>
+                                <td>' . $fones['qtd'] . '</td>
+                                <td>' . $fones['vl']. '</td>
+                            </tr>';
+                    $i++;
+                    }
                 }
 
-                foreach($_SESSION['carregadores'] as $carregadores){
+                if(isset($_SESSION['carregadores'])){
+                    foreach($_SESSION['carregadores'] as $carregadores){
 
-                    echo '<tr>
-                            <td>' . $i . '</td>
-                            <td> Carregador </td>
-                            <td>' . $carregadores['desc'] . '</td>
-                            <td>' . $carregadores['qtd'] . '</td>
-                            <td>' . $carregadores['vl']. '</td>
-                        </tr>';
-                $i++;
+                        echo '<tr>
+                                <td>' . $i . '</td>
+                                <td> Carregador </td>
+                                <td>' . $carregadores['desc'] . '</td>
+                                <td>' . $carregadores['qtd'] . '</td>
+                                <td>' . $carregadores['vl']. '</td>
+                            </tr>';
+                    $i++;
+                    }
                 }
 
-                foreach($_SESSION['caixas'] as $caixas){
+                if(isset($_SESSION['caixas'])){
+                    foreach($_SESSION['caixas'] as $caixas){
 
-                    echo '<tr>
-                            <td>' . $i . '</td>
-                            <td> Caixas de som </td>
-                            <td>' . $caixas['desc'] . '</td>
-                            <td>' . $caixas['qtd'] . '</td>
-                            <td>' . $caixas['vl'] . '</td>
-                        </tr>';
-                $i++;
+                        echo '<tr>
+                                <td>' . $i . '</td>
+                                <td> Caixas de som </td>
+                                <td>' . $caixas['desc'] . '</td>
+                                <td>' . $caixas['qtd'] . '</td>
+                                <td>' . $caixas['vl'] . '</td>
+                            </tr>';
+                    $i++;
+                    }
                 }
 
                 echo 
                     '</table>';
 
         }
+
+        //session_destroy();
     
     ?>
     

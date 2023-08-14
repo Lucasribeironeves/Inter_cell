@@ -38,10 +38,6 @@ $i = 1;
                 <td>Telefone</td>
                 <td><?php echo $_SESSION['login']['telefone'] ?></td>
             </tr>
-            <tr>
-                <td>Email</td>
-                <td><?php echo $_SESSION['login']['email'] ?></td>
-            </tr>
     </table><br>
 
     <table>
@@ -57,8 +53,9 @@ $i = 1;
         </tr>
 
         <!-- Exibição das capinhas -->
-        <?php 
-            foreach($_SESSION['capinhas'] as $capinhas){
+        <?php
+            if(isset($_SESSION['capinhas'])){ 
+                foreach($_SESSION['capinhas'] as $capinhas){
         ?>
 
             <tr>
@@ -71,12 +68,14 @@ $i = 1;
         
         <?php 
         $i++;
+                }
             }
         ?>
 
         <!-- Exibição das películas -->
         <?php 
-            foreach($_SESSION['peliculas'] as $peliculas){
+            if($_SESSION['peliculas']){
+                foreach($_SESSION['peliculas'] as $peliculas){
         ?>
 
             <tr>
@@ -89,12 +88,14 @@ $i = 1;
         
         <?php 
         $i++;
+                }
             }
         ?>
 
         <!-- Exibição dos fones de ouvido -->
-        <?php 
-            foreach($_SESSION['fones'] as $fones){
+        <?php
+            if(isset($_SESSION['fones'])){ 
+                foreach($_SESSION['fones'] as $fones){
         ?>
 
             <tr>
@@ -107,12 +108,14 @@ $i = 1;
         
         <?php
         $i++; 
+                }
             }
         ?>
 
         <!-- Exibição dos carregadores -->
         <?php 
-            foreach($_SESSION['carregadores'] as $carregadores){
+            if(isset($_SESSION['carregadores'])){
+                foreach($_SESSION['carregadores'] as $carregadores){
         ?>
 
             <tr>
@@ -125,12 +128,14 @@ $i = 1;
         
         <?php 
         $i++;
+                }
             }
         ?>
 
         <!-- Exibição das caixas de som -->
         <?php 
-            foreach($_SESSION['caixas'] as $caixas){
+            if(isset($_SESSION['caixas'])){
+                foreach($_SESSION['caixas'] as $caixas){
         ?>
 
             <tr>
@@ -143,6 +148,7 @@ $i = 1;
         
         <?php 
         $i++;
+                }
             }
         ?>
     </table><br>
