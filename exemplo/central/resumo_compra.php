@@ -182,11 +182,11 @@ $i = 1;
             <td></td>
             <td>
                 <?php 
-                    if($_SESSION['dadospag']['metselec'] == 'pix'){
+                    if($_SESSION['dadospag']['metselec'] == 'Pix'){
                         echo $_SESSION['dadospag']['pix'];
-                    }else if($_SESSION['dadospag']['metselec'] == 'credito'){
+                    }else if($_SESSION['dadospag']['metselec'] == 'Cartão de crédito'){
                         echo $_SESSION['dadospag']['cred'];
-                    }else if($_SESSION['dadospag']['metselec'] == 'debito'){
+                    }else if($_SESSION['dadospag']['metselec'] == 'Cartão de débito'){
                         echo $_SESSION['dadospag']['deb'];
                     }
                 ?>
