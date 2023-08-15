@@ -152,13 +152,13 @@
                 }
 
             echo '<tr>
+                    <td colspan="3"></td>
                     <th>Valor total</th>
                     <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
                 </tr>';
 
             echo 
             '</table><br>';
-
 
             //echo $_SESSION['valor_total'];
 
@@ -169,6 +169,6 @@
         //session_destroy();
     
     ?>
-    
+
 </body>
 </html>

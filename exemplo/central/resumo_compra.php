@@ -3,25 +3,6 @@
 session_start();
 $i = 1;
 
-$_SESSION['dadospag'] = "";
-
-if(isset($_POST['confirmar'])){
-    if(isset($_POST['opcoes'])){
-        $metselec = $_POST['opcoes'];
-        $numpix = '40028922';
-        $numdeb = $_POST['numcartaodeb'];
-        $numcred = $_POST['numcartaocred'];
-        
-        $_SESSION['dadospag'] = array(
-            'metselec' => $metselec,
-            'cred' => $numcred,
-            'deb' => $numdeb,
-            'pix' => $numpix
-        ); 
-        header("Location: ../central/resumo_compra.php", true, 303);
-    }   
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -29,37 +10,42 @@ if(isset($_POST['confirmar'])){
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Pagamento</title>
+    <title>Resumo da compra</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <!-- Exibição dos dados do usuário -->
     <table>
             <tr>
-                <th colspan="2">Dados do usuário ;D</th>
+                <th colspan="5">Dados do usuário ;D</th>
             </tr>
             <tr>
+                <th></th>
                 <th>Tipo</th>
+                <th></th>
                 <th>Informado</th>
             </tr>
             <tr>
+                <th></th>
                 <td>Nome</td>
+                <th></th>
                 <td><?php echo $_SESSION['login']['nome'] ?></td>
             </tr>
             <tr>
+                <th></th>
                 <td>Endereço</td>
+                <th></th>
                 <td><?php echo $_SESSION['login']['endereco'] ?></td>
             </tr>
             <tr>
+                <th></th>
                 <td>Telefone</td>
+                <th></th>
                 <td><?php echo $_SESSION['login']['telefone'] ?></td>
-            </tr>
-    </table><br>
+            </tr><br>
 
-    <table>
-        <tr>
+            <tr>
             <th colspan="5">Itens selecionados</th>
         </tr>
         <tr>
@@ -69,7 +55,6 @@ if(isset($_POST['confirmar'])){
             <th>Quantidade</th>
             <th>Valor</th>
         </tr>
-
         <!-- Exibição das capinhas -->
         <?php
             if(isset($_SESSION['capinhas'])){ 
@@ -174,37 +159,40 @@ if(isset($_POST['confirmar'])){
                     <th>Valor total</th>
                     <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
                 </tr>';
-
         ?>
-    </table><br>
+        
+        <tr>
+            <th colspan='5'>Dados de pagamento $</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Método</th>
+            <th></th>
+            <th>Dados</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <?php
+                    if(isset($_SESSION['dadospag']['metselec'])){
+                        echo $_SESSION['dadospag']['metselec'];
+                    }    
+                ?>
+            </td>
+            <td></td>
+            <td>
+                <?php 
+                    if($_SESSION['dadospag']['metselec'] == 'pix'){
+                        echo $_SESSION['dadospag']['pix'];
+                    }else if($_SESSION['dadospag']['metselec'] == 'credito'){
+                        echo $_SESSION['dadospag']['cred'];
+                    }else if($_SESSION['dadospag']['metselec'] == 'debito'){
+                        echo $_SESSION['dadospag']['deb'];
+                    }
+                ?>
+            </td>
+        </tr>
 
-    <form action="forma_pagamento.php" method="post">
-        <table>
-            <tr>
-                <th colspan="4">Selecione a método de pagamento!</th>
-            </tr>
-            <tr>
-                <th>#</th>
-                <th>Opção</th>
-                <th>Informações</th>
-            </tr>
-            <tr>
-                <td><input type="radio" name="opcoes" name="pix" value="Pix"></td>
-                <td>Pix</td>
-                <td>40028922</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="opcoes" name="debito" value="Cartão de débito"></td>
-                <td>Cartão de débito</td>
-                <td><input type="number" name="numcartaodeb"></td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="opcoes" name="credito" value="Cartão de crédito"></td>
-                <td>Cartão de crédito</td>
-                <td><input type="number" name="numcartaocred"></td>
-            </tr>
-        </table><br>
-        <input type="submit" value="Confirmar" name="confirmar">
-    </form>
+    </table>
 </body>
 </html>
