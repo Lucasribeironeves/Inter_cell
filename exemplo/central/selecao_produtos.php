@@ -150,12 +150,14 @@
                     }
 
                 }
-
-            echo '<tr>
-                    <td colspan="3"></td>
-                    <th>Valor total</th>
-                    <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
-                </tr>';
+             
+                if(isset($_SESSION['valor_total'])){
+                    echo '<tr>
+                            <td colspan="3"></td>
+                            <th>Valor total</th>
+                            <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
+                        </tr>';
+                }                   
 
             echo 
             '</table><br>';

@@ -34,7 +34,10 @@
             
         }
     }
-    //echo "Valor Total: ".$valor_total;
+
+    if(isset($_POST['volte'])){
+        header("Location: ../central/selecao_produtos.php", true, 303);
+    }
 
 ?>
 
@@ -98,5 +101,6 @@
             </tr>
         </table>
         <input type="submit" name="selecione" value = "Selecione">
+        <input type="submit" name="volte" value = "Voltar">
     </form>
 </body>
