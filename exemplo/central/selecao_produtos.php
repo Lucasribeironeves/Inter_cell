@@ -161,8 +161,6 @@
             echo 
             '</table><br>';
 
-            //echo $_SESSION['valor_total'];
-
             }else{
                 echo "Selecione algo :)";
             }
