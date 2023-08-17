@@ -64,8 +64,9 @@
     
     <?php 
 
-        if(isset($_SESSION['capinhas']) || isset($_SESSION['fones']) || isset($_SESSION['peliculas'])
-        || isset($_SESSION['caixas']) || isset($_SESSION['carregador'])){
+        if(isset($_SESSION['valor_total'])){
+            if(isset($_SESSION['capinhas']) || isset($_SESSION['fones']) || isset($_SESSION['peliculas'])
+            || isset($_SESSION['caixas']) || isset($_SESSION['carregador'])){
 
             echo 
             '<table>
@@ -151,23 +152,22 @@
 
                 }
              
-                if(isset($_SESSION['valor_total'])){
-                    echo '<tr>
-                            <td colspan="3"></td>
-                            <th>Valor total</th>
-                            <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
-                        </tr>';
-                }                   
+                echo '<tr>
+                        <td colspan="3"></td>
+                        <th>Valor total</th>
+                        <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
+                    </tr>';                  
 
             echo 
             '</table><br>';
 
             //echo $_SESSION['valor_total'];
 
-        }else{
-            echo "Selecione algo :)";
+            }else{
+                echo "Selecione algo :)";
+            }
         }
-
+        
         //session_destroy();
     
     ?>

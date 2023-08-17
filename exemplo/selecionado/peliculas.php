@@ -36,6 +36,7 @@
             header("Location: ../central/selecao_produtos.php", true, 303);  
         }
     }
+    
     if(isset($_POST['volte'])){
         header("Location: ../central/selecao_produtos.php", true, 303);
     }

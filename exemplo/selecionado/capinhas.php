@@ -30,8 +30,7 @@
         }
         if($ni > 0) {
             $_SESSION['valor_total'] += $valor_total;
-            header("Location: ../central/selecao_produtos.php", true, 303);
-            
+            header("Location: ../central/selecao_produtos.php", true, 303);   
         }
     }
 
