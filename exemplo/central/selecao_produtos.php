@@ -30,19 +30,19 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Carrinho de compras</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../selecaocss.css'>
+    <link rel="stylesheet" href="plimplim.css">
     <script src='main.js'></script>
 </head>
 <body>
+    <h2>Bem vindo ao carrinho de compras da Inter Cell</h2>      
+    <h1>Confira nossos produtos!</h1>
+    <div class="img">
+    
+    </div>
     <form action="selecao_produtos.php" method="post">
         <table>
             <tr>
-                <th>Bem vindo ao carrinho de compras da Inter Cell</th>
-            </tr>
-            <tr>
-                <th>Produtos</th>
-            </tr>
-            <tr>
+                
                 <td><input type="submit" value="Capinhas" name="capinhas"></td>
             </tr>
             <tr>
@@ -67,7 +67,7 @@
         if(isset($_SESSION['valor_total'])){
             if(isset($_SESSION['capinhas']) || isset($_SESSION['fones']) || isset($_SESSION['peliculas'])
             || isset($_SESSION['caixas']) || isset($_SESSION['carregador'])){
-
+            
             echo 
             '<table>
                 <tr>
