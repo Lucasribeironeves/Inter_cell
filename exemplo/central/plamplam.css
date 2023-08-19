@@ -1,0 +1,22 @@
+body {
+    background-image: url(../imgs/wal.png);
+}
+th{
+    color: #ffff;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    margin-top: 80px;
+    margin-left: 380px;
+}
+td{
+    text-align: center;
+     background-color: #d437e2;
+     color: #ffff;
+     text-transform: uppercase;
+     font-weight: bold;
+     border-radius: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+ }

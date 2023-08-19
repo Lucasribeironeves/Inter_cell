@@ -31,12 +31,12 @@ if(isset($_POST['confirmar'])){
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Pagamento</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='plomplom.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <!-- Exibição dos dados do usuário -->
-    <table>
+    <center><table>
             <tr>
                 <th colspan="2">Dados do usuário ;D</th>
             </tr>
@@ -56,9 +56,9 @@ if(isset($_POST['confirmar'])){
                 <td>Telefone</td>
                 <td><?php echo $_SESSION['login']['telefone'] ?></td>
             </tr>
-    </table><br>
+    </table></center><br>
 
-    <table>
+    <center><table>
         <tr>
             <th colspan="5">Itens selecionados</th>
         </tr>
@@ -176,10 +176,10 @@ if(isset($_POST['confirmar'])){
                 </tr>';
 
         ?>
-    </table><br>
+    </table></center><br>
 
     <form action="forma_pagamento.php" method="post">
-        <table>
+        <center><table>
             <tr>
                 <th colspan="4">Selecione a método de pagamento!</th>
             </tr>
@@ -203,7 +203,7 @@ if(isset($_POST['confirmar'])){
                 <td>Cartão de crédito</td>
                 <td><input type="number" name="numcartaocred"></td>
             </tr>
-        </table><br>
+        </table></center><br>
         <input type="submit" value="Confirmar" name="confirmar">
     </form>
 </body>

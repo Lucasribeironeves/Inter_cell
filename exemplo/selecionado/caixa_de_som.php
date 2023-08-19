@@ -51,12 +51,12 @@ session_start();
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Caixa de som</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <form action="caixa_de_som.php" method="post">
-        <table>
+       <center><table>
             <tr>
                 <th colspan="5">Selecione sua caixa de som ;D</th>
             </tr>
@@ -102,7 +102,7 @@ session_start();
                 <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
                 <td><input type="number" name="vl4" value="119.99" readonly></td>
             </tr>
-        </table>
+        </table></center>
         <input type="submit" name="selecione" value = "Selecione">
         <input type="submit" name="volte" value = "Voltar">
     </form>

@@ -50,12 +50,12 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Películas</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <form action="peliculas.php" method="post">
-        <table>
+        <center><table>
             <tr>
                 <th colspan="5">Selecione sua película ;D</th>
             </tr>
@@ -101,7 +101,7 @@
                 <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
                 <td><input type="number" name="vl4" value="30.00" readonly></td>
             </tr>
-        </table>
+        </table></center>
         <input type="submit" name="selecione" value = "Selecione">
         <input type="submit" name="volte" value = "Voltar">
     </form>

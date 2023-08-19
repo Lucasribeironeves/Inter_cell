@@ -30,11 +30,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='plomplom.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <table>
+    <center><table>
         <tr>
             <th colspan="5">Itens selecionados</th>
         </tr>
@@ -152,10 +152,10 @@
                 </tr>';
         ?>
 
-    </table><br>
+    </table></center><br>
 
     <form action="login.php" method="post">
-        <table>
+        <center><table>
             <tr>
                 <th colspan="2">Faça seu login</th>
             </tr>
@@ -171,7 +171,7 @@
                 <td>Telefone:</td>
                 <td><input type="number" name="telefone" id="telefone"></td>
             </tr>
-        </table><br>
+        </table></center><br>
         <input type="submit" name="logar" value="Logar">
     </form>
 </body>
