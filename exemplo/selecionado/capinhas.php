@@ -61,42 +61,48 @@
                 <th>#</th>
                 <th>Descrição</th>
                 <th>Quantidade</th>
-                <th>Valor</th>
+                <th>Valor</th> 
+                <th>Imagem</th>
             </tr>
             <tr>
                 <td>1</td>
                 <td><input type="checkbox" name="capinha0" id="capinha"></td>
                 <td><input type="text" name="desc0" value="Moto G30" readonly></td>
                 <td><input type="number" name="qtd0" id="qtd0" value="0" min="0"></td>
-                <td><input type="text" name="vl0" value="20.00" readonly></td>
+                <td><input type="text" name="vl0" value="20.00" readonly></td> 
+                <td> <img src= "imggs/capinha.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td><input type="checkbox" name="capinha1" id="capinha"></td>
                 <td><input type="text" name="desc1" value= "Samsung Galaxy A03 S" readonly></td>
                 <td><input type="number" name="qtd1" id="qtd1" value="0" min="0"></td>
-                <td><input type="number" name="vl1" value="10.00" readonly></td>
+                <td><input type="number" name="vl1" value="10.00" readonly></td> 
+                <td> <img src= "imggs/capinha.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td><input type="checkbox" name="capinha2" id="capinha"></td>
                 <td><input type="text" name="desc2" value="Redmi Note 11" readonly></td>
                 <td><input type="number" name="qtd2" id="qtd2" value="0" min="0"></td>
-                <td><input type="number" name="vl2" value="20.00" readonly></td>
+                <td><input type="number" name="vl2" value="20.00" readonly></td> 
+                <td> <img src= "imggs/capinha.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td><input type="checkbox" name="capinha3" id="capinha"></td>
                 <td><input type="text" name="desc3" value="Samsung S20 FE" readonly></td>
                 <td><input type="number" name="qtd3" id="qtd3" value="0" min="0"></td>
-                <td><input type="number" name="vl3" value="30.00" readonly></td>
+                <td><input type="number" name="vl3" value="30.00" readonly></td> 
+                <td> <img src= "imggs/capinha.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td><input type="checkbox" name="capinha4" id="capinha"></td>
                 <td><input type="text" name="desc4" value="Iphone 14 Pro Max" readonly></td>
                 <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
-                <td><input type="number" name="vl4" value="70.00" readonly></td>
+                <td><input type="number" name="vl4" value="70.00" readonly></td> 
+                <td> <img src= "imggs/capinha.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
         </table></center>
         <input type="submit" name="selecione" value = "Selecione">

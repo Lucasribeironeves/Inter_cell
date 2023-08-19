@@ -43,19 +43,24 @@
         <table>
             <tr>
                 
-                <td><input type="submit" value="Capinhas" name="capinhas"></td>
+                <td><input type="submit" value="Capinhas" name="capinhas"></td> 
+                <td> <img src= "imgsss/capinha.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Películas" name="peliculas"></td>
+                <td><input type="submit" value="Películas" name="peliculas"></td> 
+                <td> <img src= "imgsss/peliculas.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Fones de ouvido" name="fones"></td>
+                <td><input type="submit" value="Fones de ouvido" name="fones"></td> 
+                <td> <img src= "imgsss/fone.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Carregadores" name="carregador"></td>
+                <td><input type="submit" value="Carregadores" name="carregador"></td> 
+                <td> <img src= "imgsss/carregadores.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Caixa de som" name="caixa"></td>
+                <td><input type="submit" value="Caixa de som" name="caixa"></td> 
+                <td> <img src= "imgsss/som.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
         </table><br>
 
