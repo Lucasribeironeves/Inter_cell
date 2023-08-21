@@ -74,7 +74,7 @@ session_start();
                 <td><input type="text" name="desc0" value="Mini/JBL - Bluetooth" readonly></td>
                 <td><input type="number" name="qtd0" id="qtd0" value="0" min="0"></td>
                 <td><input type="text" name="vl0" value="59.90" readonly></td> 
-                <td> <img src= "imggs/som.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/mini2.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -82,7 +82,7 @@ session_start();
                 <td><input type="text" name="desc1" value= "JBL Boombox 3 - portátil" readonly></td>
                 <td><input type="number" name="qtd1" id="qtd1" value="0" min="0"></td>
                 <td><input type="number" name="vl1" value="140.00" readonly></td> 
-                <td> <img src= "imggs/som.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/bombox2.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -90,7 +90,7 @@ session_start();
                 <td><input type="text" name="desc2" value="Liv Star - Bluetooth" readonly></td>
                 <td><input type="number" name="qtd2" id="qtd2" value="0" min="0"></td>
                 <td><input type="number" name="vl2" value="91.74" readonly></td> 
-                <td> <img src= "imggs/som.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/liv.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>4</td>
@@ -98,7 +98,7 @@ session_start();
                 <td><input type="text" name="desc3" value="C3 tech - Bluetooth" readonly></td>
                 <td><input type="number" name="qtd3" id="qtd3" value="0" min="0"></td>
                 <td><input type="number" name="vl3" value="79.00" readonly></td> 
-                <td> <img src= "imggs/som.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/c31.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>5</td>
@@ -106,7 +106,7 @@ session_start();
                 <td><input type="text" name="desc4" value="JBL Charge 5 " readonly></td>
                 <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
                 <td><input type="number" name="vl4" value="119.99" readonly></td> 
-                <td> <img src= "imggs/som.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/charge2.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
         </table></center>
         <input type="submit" name="selecione" value = "Selecione">

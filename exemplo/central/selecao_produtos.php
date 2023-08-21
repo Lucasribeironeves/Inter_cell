@@ -44,7 +44,7 @@
             <tr>
                 
                 <td><input type="submit" value="Capinhas" name="capinhas"></td> 
-                <td> <img src= "imgsss/capinha.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imgsss/capinhas.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Películas" name="peliculas"></td> 
@@ -56,11 +56,11 @@
             </tr>
             <tr>
                 <td><input type="submit" value="Carregadores" name="carregador"></td> 
-                <td> <img src= "imgsss/carregadores.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imgsss/carregadoress.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Caixa de som" name="caixa"></td> 
-                <td> <img src= "imgsss/som.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imgsss/liv.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
         </table><br>
 

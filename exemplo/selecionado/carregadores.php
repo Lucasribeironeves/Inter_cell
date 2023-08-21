@@ -73,7 +73,7 @@ session_start();
                 <td><input type="text" name="desc0" value="Samsung-USB C 20W" readonly></td>
                 <td><input type="number" name="qtd0" id="qtd0" value="0" min="0"></td>
                 <td><input type="text" name="vl0" value="59.90" readonly></td> 
-                <td> <img src= "imggs/carregadores.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/sam.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -81,7 +81,7 @@ session_start();
                 <td><input type="text" name="desc1" value= "Redmi-USB C 60W" readonly></td>
                 <td><input type="number" name="qtd1" id="qtd1" value="0" min="0"></td>
                 <td><input type="number" name="vl1" value="34.99" readonly></td> 
-                <td> <img src= "imggs/carregadores.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/redmi_o.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -89,7 +89,7 @@ session_start();
                 <td><input type="text" name="desc2" value="Motorola-USB C 25W" readonly></td>
                 <td><input type="number" name="qtd2" id="qtd2" value="0" min="0"></td>
                 <td><input type="number" name="vl2" value="49.90" readonly></td> 
-                <td> <img src= "imggs/carregadores.jpg" alt="" widht="60px" height="60px"/></td> 
+                <td> <img src= "imggs/mot.jpg" alt="" widht="60px" height="60px"/></td> 
             </tr>
             <tr>
                 <td>4</td>
@@ -97,7 +97,7 @@ session_start();
                 <td><input type="text" name="desc3" value="LG-USB 10W" readonly></td>
                 <td><input type="number" name="qtd3" id="qtd3" value="0" min="0"></td>
                 <td><input type="number" name="vl3" value="25.00" readonly></td> 
-                <td> <img src= "imggs/carregadores.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/lg.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td>5</td>
@@ -105,7 +105,7 @@ session_start();
                 <td><input type="text" name="desc4" value="Apple-USB C 50W" readonly></td>
                 <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
                 <td><input type="number" name="vl4" value="199.90" readonly></td> 
-                <td> <img src= "imggs/carregadores.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imggs/apple.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
         </table></center>
         <input type="submit" name="selecione" value = "Selecione">
