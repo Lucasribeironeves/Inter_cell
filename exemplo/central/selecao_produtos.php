@@ -44,15 +44,15 @@
             <tr>
                 
                 <td><input type="submit" value="Capinhas" name="capinhas"></td> 
-                <td> <img src= "imgsss/capinhas.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imgsss/cap_cors.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Películas" name="peliculas"></td> 
-                <td> <img src= "imgsss/peliculas.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imgsss/pelicc.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Fones de ouvido" name="fones"></td> 
-                <td> <img src= "imgsss/fone.jpg" alt="" widht="60px" height="60px"/></td>
+                <td> <img src= "imgsss/finoo.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Carregadores" name="carregador"></td> 
