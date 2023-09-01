@@ -191,8 +191,18 @@ $i = 1;
                     }
                 ?>
             </td>
-        </tr>
-
+        </tr>  
+        </br> 
     </table>
+    <form action="resumo_compra.php" method="post"> 
+
+        <table>   
+            <tr>
+            <td> <input type="submit" value="confirmar" name="Confirmar">   </td>     
+            </tr>
+            
+        </table>
+
+
 </body>
 </html>
