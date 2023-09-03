@@ -54,23 +54,31 @@
 
 </head>
 <body>
-    <form action="capinhas.php" method="post">
-        <center>
+    <div class="container-fluid">
+
+        <form action="capinhas.php" method="post">
+           
  
                 <h1>Selecione sua capinha ;D</h1>
-  
-                    <div class="row">
+                
+                    <div class="linha row">
+                        
                         <div class="coluna col-2">
+
                             <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
                         </div>
-                        <div class="coluna col-3">
+                        <div class="coluna col-2">
 
                             <input type="checkbox" name="capinha0" id="capinha">
                             <input type="text" name="desc0" value="Moto G30" readonly>
                             <input type="number" name="qtd0" id="qtd0" value="0" min="0">
                             <input type="text" name="vl0" value="20.00" readonly> 
+
                         </div>
-                        
+
+
+
+
                     </div>
 
                     
@@ -107,8 +115,9 @@
                 <td><input type="number" name="vl4" value="70.00" readonly></td> 
                 <td> <img src= "imggs/cap_cors.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
-        </table></center>
+       
         <input type="submit" name="selecione" value = "Selecione">
         <input type="submit" name="volte" value = "Voltar">
     </form>
+    </div>
 </body>

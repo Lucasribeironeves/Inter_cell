@@ -4,7 +4,13 @@ body {
 .coluna{
     background-color: rgba(0, 0, 0, 0.288);
     border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
 }
+.linha{
+    margin-right: 30px;
+}
+
 form [value="Selecione"]{
     background-color: #d437e2;
     color: #ffff;
@@ -26,9 +32,7 @@ form [value="Voltar"]{
     font-size: 18px;
     border-radius: 10px;
 }
-table{
-    margin-top: 100px;
-}
+
 th{
     color: #ffff;
     text-transform: uppercase;
