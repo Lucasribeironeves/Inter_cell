@@ -84,15 +84,106 @@
                             </div>
                             <input type="hidden" name="vl0" value="20.00" readonly> 
 
+                        </div> 
+
+                        <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                            <input type="checkbox" name="capinha0" id="capinha">
+                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+
+
+                            <input type="hidden" name="desc1" value="Samsung Galaxy A03 S" readonly>
+                            <p>Samsung Galaxy A03 S</p>
+                            Valor: R$10
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+
+                                    <label for="qtd1">Quantidade: </label>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+
+                                    <input type="number" name="qtd1" id="qtd1" value="0" min="0" style="width: 100%;">
+                                </div>
+                            </div>
+                            <input type="hidden" name="vl1" value="10.00" readonly> 
+
+                        </div>   
+
+                        <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                            <input type="checkbox" name="capinha2" id="capinha">
+                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+
+
+                            <input type="hidden" name="desc2" value="Redmi Note 11" readonly>
+                            <p>Redmi Note 11</p>
+                            Valor: R$20
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+
+                                    <label for="qtd2">Quantidade: </label>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+
+                                    <input type="number" name="qtd2" id="qtd2" value="0" min="0" style="width: 100%;">
+                                </div>
+                            </div>
+                            <input type="hidden" name="vl2" value="20.00" readonly> 
+
+                        </div>   
+
+                        <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                            <input type="checkbox" name="capinha3" id="capinha">
+                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+
+
+                            <input type="hidden" name="desc3" value="Samsung S20 FE" readonly>
+                            <p>Samsung S20 FE</p>
+                            Valor: R$30
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+
+                                    <label for="qtd3">Quantidade: </label>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+
+                                    <input type="number" name="qtd3" id="qtd3" value="0" min="0" style="width: 100%;">
+                                </div>
+                            </div>
+                            <input type="hidden" name="vl3" value="30.00" readonly> 
+
+                        </div> 
+
+                        <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                            <input type="checkbox" name="capinha4" id="capinha">
+                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+
+
+                            <input type="hidden" name="desc4" value="Iphone 14 Pro Max" readonly>
+                            <p>Iphone 14 Pro Max</p>
+                            Valor: R$70
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+
+                                    <label for="qtd4">Quantidade: </label>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+
+                                    <input type="number" name="qtd4" id="qtd4" value="0" min="0" style="width: 100%;">
+                                </div>
+                            </div>
+                            <input type="hidden" name="vl4" value="70.00" readonly> 
+
                         </div>
 
 
 
 
-                    </div>
+                    </div> 
 
-                    
-            </tr>
+            <!--    Maneira antiga  
             <tr>
                 <td>2</td>
                 <td><input type="checkbox" name="capinha1" id="capinha"></td>
@@ -124,7 +215,12 @@
                 <td><input type="number" name="qtd4" id="qtd4" value="0" min="0"></td>
                 <td><input type="number" name="vl4" value="70.00" readonly></td> 
                 <td> <img src= "imggs/cap_cors.jpg" alt="" widht="60px" height="60px"/></td>
-            </tr>
+            </tr> 
+
+            --> 
+
+                    
+            
        
         <input type="submit" name="selecione" value = "Selecione">
         <input type="submit" name="volte" value = "Voltar">
