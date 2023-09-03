@@ -10,7 +10,7 @@ session_start();
         $selecione = $_POST['selecione'];
 
         while($i <= 4){
-            if(isset($_POST['carregador'. $i])){
+            if($_POST['qtd'. $i]>0){
                 $c = $ni;
                 $desc = $_POST['desc'.$i];
                 $qtd = $_POST['qtd'.$i];
@@ -51,6 +51,8 @@ session_start();
     <title>Carregadores</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src='main.js'></script>
 </head>
 <body>
@@ -63,7 +65,7 @@ session_start();
                     
                     <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                        <input type="checkbox" name="carregador0" id="carregador">
+                        
                         <img src="imggs/sam.jpg" alt="capinhas" width="100%">
 
 
@@ -86,7 +88,7 @@ session_start();
 
                     <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                        <input type="checkbox" name="carregador1" id="carregador">
+                       
                         <img src="imggs/redmi_o.jpg" alt="carregadores" width="100%">
 
 
@@ -109,7 +111,7 @@ session_start();
 
                     <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                        <input type="checkbox" name="carregador2" id="carregador">
+                        
                         <img src="imggs/mot.jpg" alt="carregadores" width="100%">
 
 
@@ -132,7 +134,7 @@ session_start();
 
                     <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                        <input type="checkbox" name="carregador3" id="carregador">
+                       
                         <img src="imggs/lg.jpg" alt="carregadores" width="100%">
 
 
@@ -155,7 +157,7 @@ session_start();
 
                     <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                        <input type="checkbox" name="carregador4" id="carregador">
+                        
                         <img src="imggs/apple.jpg" alt="carregadores" width="100%">
 
 

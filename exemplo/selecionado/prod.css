@@ -21,8 +21,8 @@ form [value="Selecione"]{
     font-weight: bold;
     margin-top: 20px;
     font-size: 18px;
-    margin-left: 365px;
     border-radius: 10px;
+    width: 10%;
 }
 form [value="Voltar"]{
     background-color: #d437e2;
@@ -33,6 +33,13 @@ form [value="Voltar"]{
     margin-top: 20px;
     font-size: 18px;
     border-radius: 10px;
+    width: 10%;
+}
+img{
+    border-radius: 10px;
+}
+input{
+    border-radius: 7px;
 }
 
 th{
