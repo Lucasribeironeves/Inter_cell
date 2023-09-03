@@ -22,7 +22,7 @@ form [value="Selecione"]{
     margin-top: 20px;
     font-size: 18px;
     border-radius: 10px;
-    width: 10%;
+    width: 100%;
 }
 form [value="Voltar"]{
     background-color: #d437e2;
@@ -33,7 +33,7 @@ form [value="Voltar"]{
     margin-top: 20px;
     font-size: 18px;
     border-radius: 10px;
-    width: 10%;
+    width: 100%;
 }
 img{
     border-radius: 10px;

@@ -63,9 +63,9 @@ session_start();
 
             <h1>Selecione seu carregador ;D</h1>
                 
-                <div class="linha row">
+                <div class="linha row justify-content-around">
                     
-                    <div class="coluna col-lg-2 col-md-4 col-sm-6">
+                    <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                         
                         <img src="imggs/sam.jpg" alt="capinhas" width="100%">
@@ -88,7 +88,7 @@ session_start();
 
                     </div> 
 
-                    <div class="coluna col-lg-2 col-md-4 col-sm-6">
+                    <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                        
                         <img src="imggs/redmi_o.jpg" alt="carregadores" width="100%">
@@ -111,7 +111,7 @@ session_start();
 
                     </div>   
 
-                    <div class="coluna col-lg-2 col-md-4 col-sm-6">
+                    <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                         
                         <img src="imggs/mot.jpg" alt="carregadores" width="100%">
@@ -134,7 +134,7 @@ session_start();
 
                     </div>   
 
-                    <div class="coluna col-xl-6 col-lg-2 col-md-4 col-sm-6">
+                    <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                        
                         <img src="imggs/lg.jpg" alt="carregadores" width="100%">
@@ -157,7 +157,7 @@ session_start();
 
                     </div> 
 
-                    <div class="coluna col-xl-6 col-lg-2 col-md-4 col-sm-6">
+                    <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                         
                         <img src="imggs/apple.jpg" alt="carregadores" width="100%">
@@ -233,8 +233,14 @@ session_start();
                 </tr> 
             </table></center>
                 -->
-            <input type="submit" name="selecione" value = "Selecione">
-            <input type="submit" name="volte" value = "Voltar">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="selecione" value = "Selecione">
+                    </div>
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="volte" value = "Voltar">
+                    </div>
+                </div>
         </form> 
 
 
