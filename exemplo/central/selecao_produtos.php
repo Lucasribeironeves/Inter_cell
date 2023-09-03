@@ -32,59 +32,64 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="plimplim.css">
     <script src='main.js'></script>
+    <!--bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    
     <h2>Bem vindo ao carrinho de compras da Inter Cell</h2>      
     <h1>Confira nossos produtos!</h1>
-    <div class="img">
     
-    </div>
+    
+    
     <form action="selecao_produtos.php" method="post">
-        <table>
-            <tr>
-                <td>
-                    <div class='capinhas'>
-                       
-                    <input class="entrar" type="submit" value="Capinhas" name="capinhas">
-    
-                    </div>
-                </td>
-            
-            
-                <td>
+    <div class="container">
 
-                    <div class="peliculas">
-                        <input type="submit" value="Películas" name="peliculas">
-                    </div>
-                </td>
-            
-            
-                <td>
-                    <div class="finos">
+        <div class="linha row">
+            <div class="col-4">
 
-                        <input type="submit" value="Fones" name="fones">
-                    </div>
-                </td> 
+                <div class='capinhas'>
                     
+                    <input class="entrar" type="submit" value="Capinhas" name="capinhas">
+                    
+                </div>
+            </div>
             
-                <td>
-                    <div class="carregadores">
-                        <input type="submit" value="Carregadores" name="carregador">
-                        
-                    </div>
-                </td> 
-                
-            
-                <td>
-                    <div class="caixas">
-                        <input type="submit" value="Caixa de som" name="caixa">
-                    </div>    
-                </td> 
+            <div class="col-4">
+                <div class="peliculas">
+                    <input type="submit" value="Películas" name="peliculas">
+                </div>
+            </div>
+            <div class="col-4">
 
-            </tr>
-        </table><br>
+                <div class="finos">
+                    
+                    <input type="submit" value="Fones" name="fones">
+                </div>
+            </div>
+            
+        </div>
+        <div class="linha row">
+            <div class="col-6">
+
+                <div class="carregadores">
+                    <input type="submit" value="Carregadores" name="carregador">
+                    
+                </div>
+            </div>
+            <div class="col-6">
+
+                <div class="caixas">
+                    <input type="submit" value="Caixa de som" name="caixa">
+                </div>    
+            </div>
+            
+        </div>
 
         <input type="submit" value="Finalizar" name="finalizar">
+    </div>
     </form><br>
     
     <?php 

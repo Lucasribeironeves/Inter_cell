@@ -1,6 +1,9 @@
 body {
     background-image: url(../imgs/wal.png);
 }
+.linha{
+    margin: 15px;
+}
 /* imagens das divs */
 .capinhas{
     background-image: url(imgsss/cap_cors.jpg);
