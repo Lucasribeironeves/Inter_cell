@@ -182,8 +182,14 @@
 
 
                     </div> 
+                                
+        <input type="submit" name="selecione" value = "Selecione">
+        <input type="submit" name="volte" value = "Voltar">
+    </form>
+    </div>
+</body> 
 
-            <!--    Maneira antiga  
+<!--    Maneira antiga  
             <tr>
                 <td>2</td>
                 <td><input type="checkbox" name="capinha1" id="capinha"></td>
@@ -218,12 +224,3 @@
             </tr> 
 
             --> 
-
-                    
-            
-       
-        <input type="submit" name="selecione" value = "Selecione">
-        <input type="submit" name="volte" value = "Voltar">
-    </form>
-    </div>
-</body>

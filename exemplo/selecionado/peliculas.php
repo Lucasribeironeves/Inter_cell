@@ -51,7 +51,9 @@
     <title>Películas</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
-    <script src='main.js'></script>
+    <script src='main.js'></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 <body> 
 
@@ -60,7 +62,7 @@
 <form action="peliculas.php" method="post">
    
 
-        <h1>Selecione sua capinha ;D</h1>
+        <h1>Selecione sua pelicula ;D</h1>
         
             <div class="linha row">
                 
