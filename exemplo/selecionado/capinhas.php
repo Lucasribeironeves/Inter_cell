@@ -9,7 +9,7 @@
         $selecione = $_POST['selecione'];
 
         while($i <= 4){
-            if(isset($_POST['capinha'. $i])){
+            if($_POST['qtd'.$i]>0){
                 $c = $ni;
                 $desc = $_POST['desc'.$i];
                 $qtd = $_POST['qtd'.$i];
@@ -65,7 +65,7 @@
                         
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                            <input type="checkbox" name="capinha0" id="capinha">
+                            
                             <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
 
 
@@ -88,7 +88,7 @@
 
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                            <input type="checkbox" name="capinha0" id="capinha">
+                           
                             <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
 
 
@@ -111,7 +111,7 @@
 
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                            <input type="checkbox" name="capinha2" id="capinha">
+                           
                             <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
 
 
@@ -134,7 +134,7 @@
 
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                            <input type="checkbox" name="capinha3" id="capinha">
+                            
                             <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
 
 
@@ -157,7 +157,7 @@
 
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
-                            <input type="checkbox" name="capinha4" id="capinha">
+                            
                             <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
 
 

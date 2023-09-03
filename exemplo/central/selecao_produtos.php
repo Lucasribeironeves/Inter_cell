@@ -18,9 +18,15 @@
     if(isset($_POST['finalizar'])){
         header("Location: ../central/login.php", true, 303);
     }
-
+    
     session_start();
+    if(isset($_POST['esvaziar'])){
+
+        session_destroy();
+    }
     $i = 1;
+    
+
 ?>
 
 <!DOCTYPE html>
@@ -86,6 +92,8 @@
     
 
         <input type="submit" value="Finalizar" name="finalizar">
+        <input type="submit" value="Esvaziar Carrinho 🛒" name="esvaziar">
+
     </div>
     </form><br>
     
@@ -192,10 +200,9 @@
                 echo "Selecione algo :)";
             }
         }
-        
-        //session_destroy();
+
     
     ?>
-
+    
 </body>
 </html>

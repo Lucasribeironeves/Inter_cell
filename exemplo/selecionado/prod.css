@@ -1,6 +1,8 @@
 body {
     background-image: url(../imgs/wal.png);
+    background-size: cover;
 }
+
 .coluna{
     background-color: rgba(0, 0, 0, 0.288);
     border-radius: 5px;
