@@ -1,58 +1,49 @@
 body {
     background-image: url(../imgs/wal.png);
 }
-.linha{
-    margin: 15px;
-}
+
 /* imagens das divs */
 .capinhas{
     background-image: url(imgsss/cap_cors.jpg);
     width: 250px;
     height: 250px;
     border-radius: 8px;
+    margin:10px;
 }
 .peliculas{
     background-image: url(imgsss/pelicc.jpg);
     width: 250px;
     height: 250px;
     border-radius: 8px;
+    margin:10px;
 }
 .finos{
     background-image: url(imgsss/finoo.jpg);
     width: 250px;
     height: 250px;
     border-radius: 8px;
+    margin:10px;
 }
 .carregadores{
     background-image: url(imgsss/carregadoress.jpg);
     width: 250px;
     height: 250px;
     border-radius: 8px;
+    margin:10px;
 }
 .caixas{
     background-image: url(imgsss/liv.jpg);
     width: 250px;
     height: 250px;
     border-radius: 8px;
+    margin:10px;
 }
     
 
 
-form{
-    color: #ffff;
-    border-style: solid;
-    border-bottom-width: 8px;
-    border-top-width: 8px;
-    border-right-width: 8px;
-    border-left-width: 8px;
-    width: 98%;
 
-    
-}
-form[type="submit"]:hover{
-    scale: 1.2;
-}
-form [type="submit"]{
+
+.botao_entrar{
     margin-top: 75%;
     margin-left: 31%;
     margin-right: 31%;
@@ -65,41 +56,6 @@ form [type="submit"]{
     border-radius: 8px;
     padding: 5px;
 }
-form [value="Finalizar"]{
-    display: block;
-    background-color: #0772EB;
-    font-size: 25px;
-    padding: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #ffff;
-    cursor: pointer;
-    border-radius: 18px;
-    margin-left: 45px;
-}
-h1{
-    color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 15px;
-}
-h2{
-    color: #ffff;
-    background-color: rgb(17, 84, 185);
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 310px;
-    border-radius: 50px;
-    padding: 20px;
-    width: 700px;
-}
-th{
-    color: #ffff;
-    border-style: solid;
-    border-bottom-width: 2px;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-left-width: 2px;
-}
+
+
+

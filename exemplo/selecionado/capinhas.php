@@ -63,16 +63,26 @@
                 
                     <div class="linha row">
                         
-                        <div class="coluna col-2">
-
-                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
-                        </div>
-                        <div class="coluna col-2">
+                        <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                             <input type="checkbox" name="capinha0" id="capinha">
-                            <input type="text" name="desc0" value="Moto G30" readonly>
-                            <input type="number" name="qtd0" id="qtd0" value="0" min="0">
-                            <input type="text" name="vl0" value="20.00" readonly> 
+                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+
+
+                            <input type="hidden" name="desc0" value="Moto G30" readonly>
+                            <p>MOTO G30</p>
+                            Valor: R$20
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+
+                                    <label for="qtd0">Quantidade: </label>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+
+                                    <input type="number" name="qtd0" id="qtd0" value="0" min="0" style="width: 100%;">
+                                </div>
+                            </div>
+                            <input type="hidden" name="vl0" value="20.00" readonly> 
 
                         </div>
 

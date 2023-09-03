@@ -47,46 +47,43 @@
     <form action="selecao_produtos.php" method="post">
     <div class="container">
 
-        <div class="linha row">
-            <div class="col-4">
+        <div class="row ">
+            <div class="col-lg-3 col-md-6  ">
 
-                <div class='capinhas'>
+                <div class="capinhas">
                     
-                    <input class="entrar" type="submit" value="Capinhas" name="capinhas">
+                    <input class="botao_entrar" type="submit" value="Capinhas" name="capinhas">
                     
                 </div>
             </div>
             
-            <div class="col-4">
+            <div class="col-lg-3 col-md-6  ">
                 <div class="peliculas">
-                    <input type="submit" value="Películas" name="peliculas">
+                    <input class="botao_entrar" type="submit" value="Películas" name="peliculas">
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-3 col-md-6  ">
 
                 <div class="finos">
                     
-                    <input type="submit" value="Fones" name="fones">
+                    <input class="botao_entrar" type="submit" value="Fones" name="fones">
                 </div>
             </div>
-            
-        </div>
-        <div class="linha row">
-            <div class="col-6">
+               
+       
+        
 
+            <div class="col-lg-3 col-md-6  ">
+                
                 <div class="carregadores">
-                    <input type="submit" value="Carregadores" name="carregador">
+                    <input class="botao_entrar" type="submit" value="Carregadores" name="carregador">
                     
                 </div>
             </div>
-            <div class="col-6">
-
-                <div class="caixas">
-                    <input type="submit" value="Caixa de som" name="caixa">
-                </div>    
-            </div>
+ 
             
         </div>
+    
 
         <input type="submit" value="Finalizar" name="finalizar">
     </div>
