@@ -82,7 +82,7 @@
             <div class="col-lg-3 col-md-6  ">
                 
                 <div class="carregadores">
-                    <input class="botao_entrar" type="submit" value="Carregadores" name="carregador">
+                    <input class="botao_entrar_carregador" type="submit" value="Carregadores" name="carregador">
                     
                 </div>
             </div>
