@@ -9,7 +9,7 @@
         $selecione = $_POST['selecione'];
 
         while($i <= 4){
-            if(isset($_POST['fone'. $i])){
+            if($_POST['qtd'.$i]>0){
                 $c = $ni;
                 $desc = $_POST['desc'.$i];
                 $qtd = $_POST['qtd'.$i];
@@ -57,7 +57,7 @@
 
 <div class="container-fluid">
 
-<form action="capinhas.php" method="post">
+<form action="fones.php" method="post">
    
 
         <h1>Selecione seu fone ;D</h1>
@@ -179,9 +179,8 @@
 
                 </div>
 
-</body>  
-<!-- <form action="fones.php" method="post">
-        <center><table>
+                <!-- <form action="fones.php" method="post">
+                    <center><table>
             <tr>
                 <th colspan="5">Selecione seu fone de ouvido ;D</th>
             </tr>
@@ -234,6 +233,15 @@
                 <td> <img src= "imggs/pro1.jpg" alt="" widht="60px" height="60px"/></td>
             </tr>
         </table></center>
-        <input type="submit" name="selecione" value = "Selecione">
-        <input type="submit" name="volte" value = "Voltar">
-    </form> --> 
+    --> 
+        
+                <div class="row">
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="selecione" value = "Selecione">
+                    </div>
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="volte" value = "Voltar">
+                    </div>
+                </div>
+    </form> 
+</body>  

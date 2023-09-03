@@ -183,8 +183,14 @@
 
                     </div> 
                                 
-        <input type="submit" name="selecione" value = "Selecione">
-        <input type="submit" name="volte" value = "Voltar">
+                    <div class="row">
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="selecione" value = "Selecione">
+                    </div>
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="volte" value = "Voltar">
+                    </div>
+                </div>
     </form>
     </div>
 </body> 

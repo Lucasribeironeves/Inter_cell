@@ -21,8 +21,8 @@
     
     session_start();
     if(isset($_POST['esvaziar'])){
-
         session_destroy();
+        header("Location: selecao_produtos.php", true, 303);
     }
     $i = 1;
     

@@ -10,7 +10,7 @@
         $selecione = $_POST['selecione'];
 
         while($i <= 4){
-            if(isset($_POST['pelicula'. $i])){
+            if($_POST['qtd'. $i]>0){
                 $c = $ni;
                 $desc = $_POST['desc'.$i];
                 $qtd = $_POST['qtd'.$i];
@@ -238,8 +238,14 @@
         <input type="submit" name="selecione" value = "Selecione">
         <input type="submit" name="volte" value = "Voltar">
     </form> -->  
-            <input type="submit" name="selecione" value = "Selecione">
-            <input type="submit" name="volte" value = "Voltar">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="selecione" value = "Selecione">
+                    </div>
+                    <div class="col-lg-3 col-sm-7">
+                        <input type="submit" name="volte" value = "Voltar">
+                    </div>
+                </div>
         </form>
     </div>
 </body>
