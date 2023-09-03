@@ -53,8 +53,133 @@
     <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
     <script src='main.js'></script>
 </head>
-<body>
-    <form action="peliculas.php" method="post">
+<body> 
+
+<div class="container-fluid">
+
+<form action="peliculas.php" method="post">
+   
+
+        <h1>Selecione sua capinha ;D</h1>
+        
+            <div class="linha row">
+                
+                <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                    
+                    <img src="imggs/pelicc.jpg" alt="peliculas" width="100%">
+
+
+                    <input type="hidden" name="desc0" value="Redmi Note 11" readonly>
+                    <p>Redmi Note 11</p>
+                    Valor: R$15
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+
+                            <label for="qtd0">Quantidade: </label>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+
+                            <input type="number" name="qtd0" id="qtd0" value="0" min="0" style="width: 100%;">
+                        </div>
+                    </div>
+                    <input type="hidden" name="vl0" value="15.00" readonly> 
+
+                </div> 
+
+                <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                   
+                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+
+
+                    <input type="hidden" name="desc1" value="Samsung S20 FE" readonly>
+                    <p>Samsung S20 FE</p>
+                    Valor: R$10
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+
+                            <label for="qtd1">Quantidade: </label>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+
+                            <input type="number" name="qtd1" id="qtd1" value="0" min="0" style="width: 100%;">
+                        </div>
+                    </div>
+                    <input type="hidden" name="vl1" value="15.00" readonly> 
+
+                </div>   
+
+                <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                   
+                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+
+
+                    <input type="hidden" name="desc2" value="Redmi Note 11" readonly>
+                    <p>LG Nexus 5</p>
+                    Valor: R$15
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+
+                            <label for="qtd2">Quantidade: </label>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+
+                            <input type="number" name="qtd2" id="qtd2" value="0" min="0" style="width: 100%;">
+                        </div>
+                    </div>
+                    <input type="hidden" name="vl2" value="15.00" readonly> 
+
+                </div>   
+
+                <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                    
+                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+
+
+                    <input type="hidden" name="desc3" value="Samsung Galaxy A30" readonly>
+                    <p>Samsung Galaxy A30</p>
+                    Valor: R$15
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+
+                            <label for="qtd3">Quantidade: </label>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+
+                            <input type="number" name="qtd3" id="qtd3" value="0" min="0" style="width: 100%;">
+                        </div>
+                    </div>
+                    <input type="hidden" name="vl3" value="15.00" readonly> 
+
+                </div> 
+
+                <div class="coluna col-lg-2 col-md-4 col-sm-6">
+
+                    
+                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+
+
+                    <input type="hidden" name="desc4" value="Iphone 14 Pro Max" readonly>
+                    <p>Iphone 14 Pro Max</p>
+                    Valor: R$30
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+
+                            <label for="qtd4">Quantidade: </label>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+
+                            <input type="number" name="qtd4" id="qtd4" value="0" min="0" style="width: 100%;">
+                        </div>
+                    </div>
+                    <input type="hidden" name="vl4" value="30.00" readonly> 
+
+                </div> 
+
+    <!-- <form action="peliculas.php" method="post">
         <center><table>
             <tr>
                 <th colspan="5">Selecione sua película ;D</th>
@@ -110,5 +235,11 @@
         </table></center>
         <input type="submit" name="selecione" value = "Selecione">
         <input type="submit" name="volte" value = "Voltar">
-    </form>
+    </form> -->  
+            <input type="submit" name="selecione" value = "Selecione">
+            <input type="submit" name="volte" value = "Voltar">
+        </form>
+    </div>
+</body>
+
 </body>

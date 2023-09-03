@@ -54,7 +54,9 @@ session_start();
     <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
     <script src='main.js'></script>
 </head>
-<body>
+<body> 
+
+
     <form action="caixa_de_som.php" method="post">
        <center><table>
             <tr>
@@ -111,6 +113,7 @@ session_start();
         </table></center>
         <input type="submit" name="selecione" value = "Selecione">
         <input type="submit" name="volte" value = "Voltar">
-    </form> 
+    </form>  
+        
 
 </body>
