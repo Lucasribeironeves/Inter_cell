@@ -51,8 +51,10 @@ session_start();
     <title>Carregadores</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
+    <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <!-- bootstrap-->
     <script src='main.js'></script>
 </head>
 <body>
@@ -132,7 +134,7 @@ session_start();
 
                     </div>   
 
-                    <div class="coluna col-lg-2 col-md-4 col-sm-6">
+                    <div class="coluna col-xl-6 col-lg-2 col-md-4 col-sm-6">
 
                        
                         <img src="imggs/lg.jpg" alt="carregadores" width="100%">
@@ -155,7 +157,7 @@ session_start();
 
                     </div> 
 
-                    <div class="coluna col-lg-2 col-md-4 col-sm-6">
+                    <div class="coluna col-xl-6 col-lg-2 col-md-4 col-sm-6">
 
                         
                         <img src="imggs/apple.jpg" alt="carregadores" width="100%">
@@ -176,7 +178,7 @@ session_start();
                         </div>
                         <input type="hidden" name="vl4" value="70.00" readonly> 
 
-            </div>
+                </div>
             <!--  <center><table>
                 <tr>
                     <th colspan="5">Selecione seu carregador ;D</th>
@@ -229,17 +231,13 @@ session_start();
                     <td><input type="number" name="vl4" value="199.90" readonly></td> 
                     <td> <img src= "imggs/apple.jpg" alt="" widht="60px" height="60px"/></td>
                 </tr> 
-                -->
             </table></center>
+                -->
             <input type="submit" name="selecione" value = "Selecione">
             <input type="submit" name="volte" value = "Voltar">
         </form> 
-        <br> 
-        <br>
-        <table>  
-    
-        
-        </table>  
+
+
 
          
 
