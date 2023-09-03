@@ -1,6 +1,40 @@
 body {
     background-image: url(../imgs/wal.png);
 }
+/* imagens das divs */
+.capinhas{
+    background-image: url(imgsss/cap_cors.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+.peliculas{
+    background-image: url(imgsss/pelicc.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+.finos{
+    background-image: url(imgsss/finoo.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+.carregadores{
+    background-image: url(imgsss/carregadoress.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+.caixas{
+    background-image: url(imgsss/liv.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+    
+
+
 form{
     color: #ffff;
     border-style: solid;
@@ -8,24 +42,25 @@ form{
     border-top-width: 8px;
     border-right-width: 8px;
     border-left-width: 8px;
-    width: 500px;
-    height: 450px;
-    margin-left: 418px;
+    width: 98%;
+
+    
+}
+form[type="submit"]:hover{
+    scale: 1.2;
 }
 form [type="submit"]{
-    margin-top: 13px;
-    display: block;
-    border: #0772EB;
+    margin-top: 75%;
+    margin-left: 31%;
+    margin-right: 31%;
+    width: 38%;
+    transition: all 0.5s;
     background-color: #d437e2;
     font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
     color: #ffff;
     cursor: pointer;
     border-radius: 8px;
-    width: 200px;
-    margin-left: 155px;
-    padding: 15px;
+    padding: 5px;
 }
 form [value="Finalizar"]{
     display: block;

@@ -2,6 +2,10 @@
 
 session_start();
 $i = 1;
+if(isset($_POST["Confirmar"])){
+    header("Location: ../central/confirmacao_compra.php", true, 303);
+}
+
 
 ?>
 
@@ -202,7 +206,7 @@ $i = 1;
             </tr>
             
         </table>
-
+    </form>
 
 </body>
 </html>

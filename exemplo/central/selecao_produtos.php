@@ -42,25 +42,45 @@
     <form action="selecao_produtos.php" method="post">
         <table>
             <tr>
+                <td>
+                    <div class='capinhas'>
+                       
+                    <input class="entrar" type="submit" value="Capinhas" name="capinhas">
+    
+                    </div>
+                </td>
+            
+            
+                <td>
+
+                    <div class="peliculas">
+                        <input type="submit" value="Películas" name="peliculas">
+                    </div>
+                </td>
+            
+            
+                <td>
+                    <div class="finos">
+
+                        <input type="submit" value="Fones" name="fones">
+                    </div>
+                </td> 
+                    
+            
+                <td>
+                    <div class="carregadores">
+                        <input type="submit" value="Carregadores" name="carregador">
+                        
+                    </div>
+                </td> 
                 
-                <td><input type="submit" value="Capinhas" name="capinhas"></td> 
-                <td> <img src= "imgsss/cap_cors.jpg" alt="" widht="60px" height="60px"/></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Películas" name="peliculas"></td> 
-                <td> <img src= "imgsss/pelicc.jpg" alt="" widht="60px" height="60px"/></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Fones de ouvido" name="fones"></td> 
-                <td> <img src= "imgsss/finoo.jpg" alt="" widht="60px" height="60px"/></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Carregadores" name="carregador"></td> 
-                <td> <img src= "imgsss/carregadoress.jpg" alt="" widht="60px" height="60px"/></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Caixa de som" name="caixa"></td> 
-                <td> <img src= "imgsss/liv.jpg" alt="" widht="60px" height="60px"/></td>
+            
+                <td>
+                    <div class="caixas">
+                        <input type="submit" value="Caixa de som" name="caixa">
+                    </div>    
+                </td> 
+
             </tr>
         </table><br>
 

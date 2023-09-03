@@ -1,6 +1,10 @@
 body {
     background-image: url(../imgs/wal.png);
 }
+.coluna{
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 5px;
+}
 form [value="Selecione"]{
     background-color: #d437e2;
     color: #ffff;
@@ -28,15 +32,6 @@ table{
 th{
     color: #ffff;
     text-transform: uppercase;
-    border-radius: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-td{
-   text-align: center;
-    background-color: blue;
-    color: #ffff;
-    text-transform: uppercase;
-    font-weight: bold;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
 }

@@ -49,28 +49,31 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
     <script src='main.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <form action="capinhas.php" method="post">
-        <center><table>
-            <tr>
-                <th colspan="5">Selecione sua capinha ;D</th>
-            </tr>
-            <tr>
-                <th>Indíce</th>
-                <th>#</th>
-                <th>Descrição</th>
-                <th>Quantidade</th>
-                <th>Valor</th> 
-                <th>Imagem</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td><input type="checkbox" name="capinha0" id="capinha"></td>
-                <td><input type="text" name="desc0" value="Moto G30" readonly></td>
-                <td><input type="number" name="qtd0" id="qtd0" value="0" min="0"></td>
-                <td><input type="text" name="vl0" value="20.00" readonly></td> 
-                <td> <img src= "imggs/cap_cors.jpg" alt="" widht="60px" height="60px"/></td>
+        <center>
+ 
+                <h1>Selecione sua capinha ;D</h1>
+  
+                    <div class="row">
+                        <div class="coluna col-2">
+                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+                        </div>
+                        <div class="coluna col-3">
+
+                            <input type="checkbox" name="capinha0" id="capinha">
+                            <input type="text" name="desc0" value="Moto G30" readonly>
+                            <input type="number" name="qtd0" id="qtd0" value="0" min="0">
+                            <input type="text" name="vl0" value="20.00" readonly> 
+                        </div>
+                        
+                    </div>
+
+                    
             </tr>
             <tr>
                 <td>2</td>
