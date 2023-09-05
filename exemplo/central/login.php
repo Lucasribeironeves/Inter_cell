@@ -165,7 +165,7 @@
                 <td><input class="dados" type="number" name="telefone" id="telefone"></td>
             </tr>
         </table></center><br>
-        <input class="botao_logar" type="submit" name="confirmar" value="Logar">
+        <input class="botao_logar" type="submit" name="logar" value="Logar">
     </form>
 </body>
 </html>
