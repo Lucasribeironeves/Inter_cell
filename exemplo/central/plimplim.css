@@ -5,7 +5,7 @@ body {
 
 /* imagens das divs */
 .capinhas{
-    background-image: url(imgsss/capinha_celular.webp);
+    background-image: url(imgsss/capinha_celular.jpg);
     width: 100%;
     height: 250px;
     border-radius: 8px;
@@ -19,7 +19,7 @@ body {
     margin:10px;
 }
 .finos{
-    background-image: url(imgsss/fone_ouvido.webp);
+    background-image: url(imgsss/fone_ouvido.jpg);
     width: 100%;
     height: 250px;
     border-radius: 8px;
