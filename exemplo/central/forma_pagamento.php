@@ -31,43 +31,44 @@ if(isset($_POST['confirmar'])){
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Pagamento</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='plomplom.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='plimplim.css'>
     <script src='main.js'></script>
+
 </head>
 <body>
     <!-- Exibição dos dados do usuário -->
     <center><table>
             <tr>
-                <th colspan="2">Dados do usuário ;D</th>
+                <th colspan="2"><p class="destaque">Dados do usuário ;D</p></th>
             </tr>
             <tr>
-                <th>Tipo</th>
-                <th>Informado</th>
+                <th><p class="destaque3">Tipo</p></th>
+                <th><p class="destaque3">Informado</p></th>
             </tr>
             <tr>
-                <td>Nome</td>
+                <td><p class="destaque2">Nome:</p></td>
                 <td><?php echo $_SESSION['login']['nome'] ?></td>
             </tr>
             <tr>
-                <td>Endereço</td>
+                <td><p class="destaque2">Endereço:</p></td>
                 <td><?php echo $_SESSION['login']['endereco'] ?></td>
             </tr>
             <tr>
-                <td>Telefone</td>
+                <td><p class="destaque2">Telefone:</p></td>
                 <td><?php echo $_SESSION['login']['telefone'] ?></td>
             </tr>
     </table></center><br>
 
     <center><table>
         <tr>
-            <th colspan="5">Itens selecionados</th>
+            <th colspan="5"><p class="destaque">Itens selecionados</p></th>
         </tr>
         <tr>
-            <th>Indíce</th>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
-            <th>Valor</th>
+            <th><p class="destaque2">Indíce</p></th>
+            <th><p class="destaque2">Nome</p></th>
+            <th><p class="destaque2">Descrição</p></th>
+            <th><p class="destaque2">Quantidade</p></th>
+            <th><p class="destaque2">Valor</p></th>
         </tr>
 
         <!-- Exibição das capinhas -->
@@ -156,24 +157,19 @@ if(isset($_POST['confirmar'])){
                 foreach($_SESSION['caixas'] as $caixas){
         ?>
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Caixas de som" ?></td>
-                <td><?php echo $caixas['desc']; ?></td>
-                <td><?php echo $caixas['qtd']; ?></td>
-                <td><?php echo $caixas['vl']; ?></td>
-            </tr>
+
         
         <?php 
         $i++;
                 }
             }
 
-            echo '<tr>
-                    <th colspan="3"></th>
-                    <th>Valor total</th>
-                    <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
-                </tr>';
+            echo '
+            <tr>
+                <td colspan="3"></td>
+                <th><p class="destaque2">Valor total</p></th>
+                <td><p class="dtq_vtl">'. 'R$' . $_SESSION['valor_total'] . '</p></td>
+            </tr>';
 
         ?>
     </table></center><br>
@@ -181,12 +177,12 @@ if(isset($_POST['confirmar'])){
     <form action="forma_pagamento.php" method="post">
         <center><table>
             <tr>
-                <th colspan="4">Selecione a método de pagamento!</th>
+                <th colspan="4"><p class="destaque">Selecione a método de pagamento!</p></th>
             </tr>
             <tr>
-                <th>#</th>
-                <th>Opção</th>
-                <th>Informações</th>
+                <th><p class="destaque2">#</p></th>
+                <th><p class="destaque2">Opção</p></th>
+                <th><p class="destaque2">Informações</p></th>
             </tr>
             <tr>
                 <td><input type="radio" name="opcoes" name="pix" value="Pix"></td>
@@ -204,7 +200,7 @@ if(isset($_POST['confirmar'])){
                 <td><input type="number" name="numcartaocred"></td>
             </tr>
         </table></center><br>
-        <input type="submit" value="Confirmar" name="confirmar">
+        <input class="botao_final" type="submit" value="CONFIRMAR" name="confirmar">
     </form>
 </body>
 </html>

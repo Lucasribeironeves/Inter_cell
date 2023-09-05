@@ -16,48 +16,50 @@ if(isset($_POST["Confirmar"])){
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Resumo da compra</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='plamplam.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='plimplim.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <table>
+    <center>
+
+        <table class="resulmo">
             <tr>
-                <th colspan="5">Dados do usuário ;D</th>
+                <th colspan="5"><p class="destaque">Dados do usuário ;D</p></th>
             </tr>
             <tr>
                 <th></th>
-                <th>Tipo</th>
+                <th><p class="destaque2">Tipo</p></th>
                 <th></th>
-                <th>Informado</th>
+                <th><p class="destaque2">Informado:</p></th>
             </tr>
             <tr>
                 <th></th>
-                <td>Nome</td>
+                <td><p class="destaque2">Nome:</p></td>
                 <th></th>
                 <td><?php echo $_SESSION['login']['nome'] ?></td>
             </tr>
             <tr>
                 <th></th>
-                <td>Endereço</td>
+                <td><p class="destaque2">Endereço:</p></td>
                 <th></th>
                 <td><?php echo $_SESSION['login']['endereco'] ?></td>
             </tr>
             <tr>
                 <th></th>
-                <td>Telefone</td>
+                <td><p class="destaque2">Telefone:</p></td>
                 <th></th>
                 <td><?php echo $_SESSION['login']['telefone'] ?></td>
             </tr><br>
 
             <tr>
-            <th colspan="5">Itens selecionados</th>
+            <th colspan="5"><p class="destaque">Itens selecionados</p></th>
         </tr>
         <tr>
-            <th>Indíce</th>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
-            <th>Valor</th>
+            <th><p class="destaque2">Indíce</p></th>
+            <th><p class="destaque2">Nome</p></th>
+            <th><p class="destaque2">Descrição</p></th>
+            <th><p class="destaque2">Quantidade</p></th>
+            <th><p class="destaque2">Valor</p></th>
         </tr>
         <!-- Exibição das capinhas -->
         <?php
@@ -77,7 +79,7 @@ if(isset($_POST["Confirmar"])){
         $i++;
                 }
             }
-        ?>
+            ?>
 
         <!-- Exibição das películas -->
         <?php 
@@ -92,7 +94,7 @@ if(isset($_POST["Confirmar"])){
                 <td><?php echo $peliculas['qtd']; ?></td>
                 <td><?php echo $peliculas['vl']; ?></td>
             </tr>
-        
+            
         <?php 
         $i++;
                 }
@@ -103,9 +105,9 @@ if(isset($_POST["Confirmar"])){
         <?php
             if(isset($_SESSION['fones'])){ 
                 foreach($_SESSION['fones'] as $fones){
-        ?>
+                    ?>
 
-            <tr>
+<tr>
                 <td><?php echo $i ?></td>
                 <td><?php echo "Fone de ouvido" ?></td>
                 <td><?php echo $fones['desc']; ?></td>
@@ -115,19 +117,19 @@ if(isset($_POST["Confirmar"])){
         
         <?php
         $i++; 
-                }
-            }
-        ?>
+    }
+}
+?>
 
-        <!-- Exibição dos carregadores -->
-        <?php 
+<!-- Exibição dos carregadores -->
+<?php 
             if(isset($_SESSION['carregadores'])){
                 foreach($_SESSION['carregadores'] as $carregadores){
-        ?>
+                    ?>
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Carregador" ?></td>
+<tr>
+    <td><?php echo $i ?></td>
+    <td><?php echo "Carregador" ?></td>
                 <td><?php echo $carregadores['desc']; ?></td>
                 <td><?php echo $carregadores['qtd']; ?></td>
                 <td><?php echo $carregadores['vl']; ?></td>
@@ -158,21 +160,22 @@ if(isset($_POST["Confirmar"])){
                 }
             }
 
-            echo '<tr>
-                    <th colspan="3"></th>
-                    <th>Valor total</th>
-                    <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
-                </tr>';
+            echo '
+            <tr>
+                <td colspan="3"></td>
+                <th><p class="destaque2">Valor total</p></th>
+                <td><p class="dtq_vtl">'. 'R$' . $_SESSION['valor_total'] . '</p></td>
+            </tr>';
         ?>
         
         <tr>
-            <th colspan='5'>Dados de pagamento $</th>
+            <th colspan='5'><p class="destaque">Dados de pagamento $</p></th>
         </tr>
         <tr>
             <th></th>
-            <th>Método</th>
+            <th><p class="destaque2">Método</p></th>
             <th></th>
-            <th>Dados</th>
+            <th><p class="destaque2">Dados</p></th>
         </tr>
         <tr>
             <td></td>
@@ -198,14 +201,12 @@ if(isset($_POST["Confirmar"])){
         </tr>  
         </br> 
     </table>
+</center>
     <form action="resumo_compra.php" method="post"> 
 
-        <table>   
-            <tr>
-            <td> <input type="submit" value="confirmar" name="Confirmar">   </td>     
-            </tr>
-            
-        </table>
+
+        <input class="botao_final" type="submit" value="CONFIRMAR" name="Confirmar">  
+ 
     </form>
 
 </body>

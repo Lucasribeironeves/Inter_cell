@@ -30,20 +30,21 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='plomplom.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='plimplim.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <center><table>
+    <center>
+        <table>
         <tr>
-            <th colspan="5">Itens selecionados</th>
+            <th colspan="5"><p class="destaque">Itens selecionados</p></th>
         </tr>
         <tr>
-            <th>Indíce</th>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
-            <th>Valor</th>
+            <th><p class="destaque2">Indíce</p></th>
+            <th><p class="destaque2">Nome</p></th>
+            <th><p class="destaque2">Descrição</p></th>
+            <th><p class="destaque2">Quantidade</p></th>
+            <th><p class="destaque2">Valor</p></th>
         </tr>
 
         <!-- Exibição das capinhas -->
@@ -132,14 +133,6 @@
                 foreach($_SESSION['caixas'] as $caixas){
         ?>
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Caixas de som" ?></td>
-                <td><?php echo $caixas['desc']; ?></td>
-                <td><?php echo $caixas['qtd']; ?></td>
-                <td><?php echo $caixas['vl']; ?></td>
-            </tr>
-        
         <?php 
         $i++;
                 }
@@ -147,8 +140,8 @@
  
             echo '<tr>
                     <td colspan="3"></td>
-                    <th>Valor total</th>
-                    <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
+                    <th><p class="destaque2">Valor total</p></th>
+                    <td><p class="dtq_vtl">'. 'R$' . $_SESSION['valor_total'] . '</p></td>
                 </tr>';
         ?>
 
@@ -157,22 +150,22 @@
     <form action="login.php" method="post">
         <center><table>
             <tr>
-                <th colspan="2">Faça seu login</th>
+                <th colspan="2"><p class="destaque">Faça seu login</p></th>
             </tr>
             <tr>
-                <td>Nome:</td>
-                <td><input type="text" name="nome" id="nome"></td>
+                <td><p class="destaque2">Nome:</p></td>
+                <td><input class="dados" type="text" name="nome" id="nome"></td>
             </tr>
             <tr>
-                <td>Endereço:</td>
-                <td><input type="text" name="endereco" id="endereco"></td>
+                <td><p class="destaque2">Endereço:</p></td>
+                <td><input class="dados" type="text" name="endereco" id="endereco"></td>
             </tr>
             <tr>
-                <td>Telefone:</td>
-                <td><input type="number" name="telefone" id="telefone"></td>
+                <td><p class="destaque2">Telefone:</p></td>
+                <td><input class="dados" type="number" name="telefone" id="telefone"></td>
             </tr>
         </table></center><br>
-        <input type="submit" name="logar" value="Logar">
+        <input class="botao_logar" type="submit" name="confirmar" value="Logar">
     </form>
 </body>
 </html>

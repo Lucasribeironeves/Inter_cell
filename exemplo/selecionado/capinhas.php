@@ -59,7 +59,7 @@
         <form action="capinhas.php" method="post">
            
  
-                <h1>Selecione sua capinha ;D</h1>
+                <p class="titulo">Selecione sua capinha ;D</p>
                 
                     <div class="linha row">
                         
@@ -93,7 +93,7 @@
 
 
                             <input type="hidden" name="desc1" value="Samsung Galaxy A03 S" readonly>
-                            <p>Samsung Galaxy A03 S</p>
+                            <p>Samsung A03 S</p>
                             Valor: R$10
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">

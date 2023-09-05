@@ -45,8 +45,8 @@
 </head>
 <body>
     
-    <h2>Bem vindo ao carrinho de compras da Inter Cell</h2>      
-    <h1>Confira nossos produtos!</h1>
+    <p class="inicio">Bem vindo a Inter Cell</p>      
+    <p>Confira nossos produtos!</p>
     
     
     
@@ -91,8 +91,8 @@
         </div>
     
 
-        <input type="submit" value="Finalizar" name="finalizar">
-        <input type="submit" value="Esvaziar Carrinho 🛒" name="esvaziar">
+        <input class="final" type="submit" value="FINALIZAR" name="finalizar">
+        <input class="esvaziar" type="submit" value="ESVAZIAR CARRINHO 🛒" name="esvaziar">
 
     </div>
     </form><br>
@@ -101,10 +101,10 @@
 
         if(isset($_SESSION['valor_total'])){
             if(isset($_SESSION['capinhas']) || isset($_SESSION['fones']) || isset($_SESSION['peliculas'])
-            || isset($_SESSION['caixas']) || isset($_SESSION['carregador'])){
+            || isset($_SESSION['caixas']) || isset($_SESSION['carregadores'])){
             
             echo 
-            '<table>
+            '<table class="selecao_prod">
                 <tr>
                     <th colspan="5">Itens selecionados</th>
                 </tr>
@@ -170,21 +170,6 @@
                             </tr>';
                     $i++;
                     }
-                }
-
-                if(isset($_SESSION['caixas'])){
-                    foreach($_SESSION['caixas'] as $caixas){
-
-                        echo '<tr>
-                                <td>' . $i . '</td>
-                                <td> Caixas de som </td>
-                                <td>' . $caixas['desc'] . '</td>
-                                <td>' . $caixas['qtd'] . '</td>
-                                <td>' . $caixas['vl'] . '</td>
-                            </tr>';
-                    $i++;
-                    }
-
                 }
              
                 echo '<tr>

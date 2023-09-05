@@ -2,7 +2,9 @@ body {
     background-image: url(../imgs/wal.png);
     background-size: cover;
 }
-
+.inicio{
+    font-weight: 700;
+}
 /* imagens das divs */
 .capinhas{
     background-image: url(imgsss/capinha_celular.jpg);
@@ -39,11 +41,61 @@ body {
     border-radius: 8px;
     margin:10px;
 }
-    
+/*configurando tabela*/
 table{
     color: white;
+    background-color: rgba(0, 0, 0, 0.524);
+    text-align: center;
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
 }
+.destaque{
+    background-color: rgba(255, 255, 255, 0.202);
+    font-size: 30px;
+    border-radius: 10px;
+}
+.destaque2{
+    background-color: rgba(255, 255, 255, 0.043);
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.destaque3{
+    background-color: rgba(255, 255, 255, 0.136);
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.dtq_vtl{
+    font-size: 25px;
+}
+.botao_logar{
+    background-color: rgb(26, 84, 244);
+    font-size: 20px;
+    width: 8%;
+    margin-left: 46%;
+    margin-right: 46%;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.resulmo{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.524);
+    text-align: center;
+    margin: 10px;
+    width: 70%;
+    padding: 40px;
+    border-radius: 10px;
 
+}
 
 
 .botao_entrar{
@@ -52,12 +104,13 @@ table{
     margin-right: 31%;
     width: 38%;
     transition: all 0.5s;
-    background-color: #d437e2;
+    background-color: #b101bd;
     font-size: 18px;
     color: #ffff;
     cursor: pointer;
     border-radius: 8px;
     padding: 5px;
+
 }
 .botao_entrar_carregador{
     margin-top: 200px;
@@ -65,7 +118,7 @@ table{
     margin-right: 22%;
     width: 56%;
     transition: all 0.5s;
-    background-color: #d437e2;
+    background-color: #b101bd;
     font-size: 18px;
     color: #ffff;
     cursor: pointer;
@@ -75,4 +128,52 @@ table{
 
 .row{
     width: 100%;
+}
+p{
+    font-size: 42px;
+    color: #ffff;
+    text-align: center;
+}
+.final{
+    border-radius: 10px;
+    background-color: rgb(26, 84, 244);
+    font-weight: 700;
+}
+.esvaziar{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-weight: 500;
+}
+.confirmacao{
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 50%;
+    padding: 10px;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 15px;
+}
+
+.botao_final{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    width: 14%;
+    margin-top: 2%;
+    margin-left: 43%;
+    margin-right: 43%;
+    font-weight: 700;
+
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number]{
+    border-radius: 5px;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.dados{
+    border-radius: 5px;
 }

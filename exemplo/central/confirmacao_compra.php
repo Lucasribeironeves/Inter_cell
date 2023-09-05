@@ -1,8 +1,8 @@
 <?php   
 
-    session_start(); 
-
-    session_destroy();
+if (isset($_POST['voltar'])) {
+    header("Location: ../central/selecao_produtos.php", true, 303);
+}
 
 ?>
 
@@ -14,16 +14,20 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title> Confirmação Compra </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='plimplim.css'>
     <script src='main.js'></script>
 </head>
 <body> 
 
     <div class="confirmacao">  
 
-        Sua compra foi confirmada!!!!
+        <p>Sua compra foi confirmada!!!🛒</p>
 
     </div>
-    
+    <form action="confirmacao_compra.php" method="post">
+        <div>
+            <input class="botao_final" type="submit" value="🏠 Voltar à tela inicial" name="voltar">
+        </div>
+    </form>
 </body>
 </html>
