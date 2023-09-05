@@ -68,7 +68,7 @@ session_start();
                     <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                         
-                        <img src="imggs/sam.jpg" alt="capinhas" width="100%">
+                        <img src="imggs/sam20wcarregador.png" alt="capinhas" width="100%">
 
 
                         <input type="hidden" name="desc0" value="Samsung-USB C 20W" readonly>
@@ -91,7 +91,7 @@ session_start();
                     <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                        
-                        <img src="imggs/redmi_o.jpg" alt="carregadores" width="100%">
+                        <img src="imggs/xiaomi60wcarregador.png" alt="carregadores" width="100%">
 
 
                         <input type="hidden" name="desc1" value="Redmi-USB C 60W" readonly>
@@ -114,7 +114,7 @@ session_start();
                     <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                         
-                        <img src="imggs/mot.jpg" alt="carregadores" width="100%">
+                        <img src="imggs/mt25wcarregador.png" alt="carregadores" width="100%">
 
 
                         <input type="hidden" name="desc2" value="Motorola-USB C 25W" readonly>
@@ -137,7 +137,7 @@ session_start();
                     <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                        
-                        <img src="imggs/lg.jpg" alt="carregadores" width="100%">
+                        <img src="imggs/lg10wcarregador.png" alt="carregadores" width="100%">
 
 
                         <input type="hidden" name="desc3" value="LG-USB 10W" readonly>
@@ -160,7 +160,7 @@ session_start();
                     <div class="coluna col-xxl-4 col-lg-2 col-md-4 col-sm-6">
 
                         
-                        <img src="imggs/apple.jpg" alt="carregadores" width="100%">
+                        <img src="imggs/apple50wcarregador.png" alt="carregadores" width="100%">
 
 
                         <input type="hidden" name="desc4" value="Iphone 14 Pro Max" readonly>

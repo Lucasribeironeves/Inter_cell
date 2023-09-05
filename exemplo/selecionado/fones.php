@@ -67,7 +67,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                     
-                    <img src="imggs/gbuds1.jpg" alt="fones" width="100%">
+                    <img src="imggs/buds2fone.png" alt="fones" width="100%">
 
 
                     <input type="hidden" name="desc0" value="Galaxy Buds 2 - Bluetooth" readonly>
@@ -90,7 +90,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                    
-                    <img src="imggs/ins1.jpg" alt="fones" width="100%">
+                    <img src="imggs/instage3fone.png" alt="fones" width="100%">
 
 
                     <input type="hidden" name="desc1" value="Samsung Galaxy A03 S" readonly>
@@ -113,7 +113,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                    
-                    <img src="imggs/red1.jpg" alt="fones" width="100%">
+                    <img src="imggs/airdotsfone.png" alt="fones" width="100%">
 
 
                     <input type="hidden" name="desc2" value="Redmi Air Dots - Bluetooth" readonly>
@@ -136,7 +136,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                     
-                    <img src="imggs/qcyy1.jpg" alt="fones" width="100%">
+                    <img src="imggs/qcyt13fone.png" alt="fones" width="100%">
 
 
                     <input type="hidden" name="desc3" value="QCY T13 - Bluetooth" readonly>
@@ -159,7 +159,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                     
-                    <img src="imggs/pro1.jpg" alt="fones" width="100%">
+                    <img src="imggs/buds2profone.png" alt="fones" width="100%">
 
 
                     <input type="hidden" name="desc4" value="Galaxy Buds 2 Pro - Bluetooth" readonly>

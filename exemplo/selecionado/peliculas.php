@@ -69,7 +69,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                     
-                    <img src="imggs/pelicc.jpg" alt="peliculas" width="100%">
+                    <img src="imggs/rn11pelicula.png" alt="peliculas" width="100%">
 
 
                     <input type="hidden" name="desc0" value="Redmi Note 11" readonly>
@@ -92,7 +92,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                    
-                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+                    <img src="imggs/s20feprivpelicula.png" alt="capinhas" width="100%">
 
 
                     <input type="hidden" name="desc1" value="Samsung S20 FE" readonly>
@@ -115,7 +115,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                    
-                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+                    <img src="imggs/nexus5pelicula.png" alt="capinhas" width="100%">
 
 
                     <input type="hidden" name="desc2" value="Redmi Note 11" readonly>
@@ -138,7 +138,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                     
-                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+                    <img src="imggs/a30pelicula.png" alt="capinhas" width="100%">
 
 
                     <input type="hidden" name="desc3" value="Samsung Galaxy A30" readonly>
@@ -161,7 +161,7 @@
                 <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                     
-                    <img src="imggs/pelicc.jpg" alt="capinhas" width="100%">
+                    <img src="imggs/ip14promaxpelicula.png" alt="capinhas" width="100%">
 
 
                     <input type="hidden" name="desc4" value="Iphone 14 Pro Max" readonly>

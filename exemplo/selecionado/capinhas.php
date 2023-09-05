@@ -66,7 +66,7 @@
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                             
-                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+                            <img src="imggs/mtg30capa.png" alt="capinhas" width="100%">
 
 
                             <input type="hidden" name="desc0" value="Moto G30" readonly>
@@ -89,7 +89,7 @@
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                            
-                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+                            <img src="imggs/a03scapa.png" alt="capinhas" width="100%">
 
 
                             <input type="hidden" name="desc1" value="Samsung Galaxy A03 S" readonly>
@@ -112,7 +112,7 @@
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                            
-                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+                            <img src="imggs/rn114gcapa.png" alt="capinhas" width="100%">
 
 
                             <input type="hidden" name="desc2" value="Redmi Note 11" readonly>
@@ -135,7 +135,7 @@
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                             
-                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+                            <img src="imggs/s20fecapa.png" alt="capinhas" width="100%">
 
 
                             <input type="hidden" name="desc3" value="Samsung S20 FE" readonly>
@@ -158,7 +158,7 @@
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
 
                             
-                            <img src="imggs/cap_cors.jpg" alt="capinhas" width="100%">
+                            <img src="imggs/ip14promaxcapa.png" alt="capinhas" width="100%">
 
 
                             <input type="hidden" name="desc4" value="Iphone 14 Pro Max" readonly>

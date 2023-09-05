@@ -5,28 +5,28 @@ body {
 
 /* imagens das divs */
 .capinhas{
-    background-image: url(imgsss/cap_cors.jpg);
+    background-image: url(imgsss/capinha_celular.webp);
     width: 100%;
     height: 250px;
     border-radius: 8px;
     margin:10px;
 }
 .peliculas{
-    background-image: url(imgsss/pelicc.jpg);
+    background-image: url(imgsss/pelicula.jpg);
     width: 100%;
     height: 250px;
     border-radius: 8px;
     margin:10px;
 }
 .finos{
-    background-image: url(imgsss/finoo.jpg);
+    background-image: url(imgsss/fone_ouvido.webp);
     width: 100%;
     height: 250px;
     border-radius: 8px;
     margin:10px;
 }
 .carregadores{
-    background-image: url(imgsss/carregadoress.jpg);
+    background-image: url(imgsss/carregador.webp);
     width: 100%;
     height: 250px;
     border-radius: 8px;
