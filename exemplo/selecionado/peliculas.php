@@ -97,7 +97,7 @@
 
                     <input type="hidden" name="desc1" value="Samsung S20 FE" readonly>
                     <p>Samsung S20 FE</p>
-                    Valor: R$10
+                    Valor: R$15
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
 

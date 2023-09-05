@@ -130,7 +130,7 @@ session_start();
                                 <input type="number" name="qtd2" id="qtd2" value="0" min="0" style="width: 100%;">
                             </div>
                         </div>
-                        <input type="hidden" name="vl2" value="20.00" readonly> 
+                        <input type="hidden" name="vl2" value="49.90" readonly> 
 
                     </div>   
 
@@ -176,7 +176,7 @@ session_start();
                                 <input type="number" name="qtd4" id="qtd4" value="0" min="0" style="width: 100%;">
                             </div>
                         </div>
-                        <input type="hidden" name="vl4" value="70.00" readonly> 
+                        <input type="hidden" name="vl4" value="199.90" readonly> 
 
                 </div>
             <!--  <center><table>
