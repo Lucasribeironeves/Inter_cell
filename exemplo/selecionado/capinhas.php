@@ -15,13 +15,15 @@
                 $qtd = $_POST['qtd'.$i];
                 $vl = $_POST['vl'.$i];
                 $valor_total += ($vl*$qtd);
+                $cor=$_POST['cor'.$i];
 
                 $_SESSION['capinhas'] = array_merge($_SESSION['capinhas'],
                 array($c => array(
                     'ni'=> $i,
                     'desc'=> $desc, 
                     'qtd'=> $qtd, 
-                    'vl'=> $vl
+                    'vl'=> $vl,
+                    'cor'=> $cor
                 )));
 
                 $ni++;
@@ -82,6 +84,12 @@
                                     <input type="number" name="qtd0" id="qtd0" value="0" min="0" style="width: 100%;">
                                 </div>
                             </div>
+                            <input type="radio" name="cor0" id="azul" value="Azul">
+                            <label for="cor0">Azul</label><br>
+                            <input type="radio" name="cor0" id="vermelha" value="Vermelha">
+                            <label for="cor0">Vermelha</label><br>
+                            <input type="radio" name="cor0" id="preta" value="Preta">
+                            <label for="cor0">Preta</label>
                             <input type="hidden" name="vl0" value="20.00" readonly> 
 
                         </div> 
@@ -106,6 +114,12 @@
                                 </div>
                             </div>
                             <input type="hidden" name="vl1" value="10.00" readonly> 
+                            <input type="radio" name="cor1" id="preta" value="Preta">
+                            <label for="cor1">Preta</label><br>
+                            <input type="radio" name="cor1" id="rosa" value="Rosa">
+                            <label for="cor1">Rosa</label><br>
+                            <input type="radio" name="cor1" id="cinza" value="Cinza">
+                            <label for="cor1">Cinza</label><br>
 
                         </div>   
 
@@ -129,7 +143,12 @@
                                 </div>
                             </div>
                             <input type="hidden" name="vl2" value="20.00" readonly> 
-
+                            <input type="radio" name="cor2" id="verde" value="Verde">
+                            <label for="cor2">Verde</label><br>
+                            <input type="radio" name="cor2" id="preta" value="Preta">
+                            <label for="cor2">Preta</label><br>
+                            <input type="radio" name="cor2" id="vermelha" value="Vermelha">
+                            <label for="cor2">Vermelha</label>
                         </div>   
 
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
@@ -152,7 +171,12 @@
                                 </div>
                             </div>
                             <input type="hidden" name="vl3" value="30.00" readonly> 
-
+                            <input type="radio" name="cor3" id="azul" value="Azul">
+                            <label for="cor3">Azul</label><br>
+                            <input type="radio" name="cor3" id="vermelha" value="Vermelha">
+                            <label for="cor3">Vermelha</label><br>
+                            <input type="radio" name="cor3" id="preta" value="Preta">
+                            <label for="cor3">Preta</label>
                         </div> 
 
                         <div class="coluna col-lg-2 col-md-4 col-sm-6">
@@ -175,7 +199,12 @@
                                 </div>
                             </div>
                             <input type="hidden" name="vl4" value="70.00" readonly> 
-
+                            <input type="radio" name="cor4" id="branca" value="Branca">
+                            <label for="cor4">Branca</label><br>
+                            <input type="radio" name="cor4" id="cinza" value="Cinza">
+                            <label for="cor4">Cinza</label><br>
+                            <input type="radio" name="cor4" id="rosa" value="Rosa">
+                            <label for="cor4">Rosa</label>
                         </div>
 
 

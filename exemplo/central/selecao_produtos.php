@@ -125,7 +125,13 @@
                                 <td>' . $capinhas['desc'] . '</td>
                                 <td>' . $capinhas['qtd'] . '</td>
                                 <td>' . $capinhas['vl'] . '</td>
-                            </tr>';
+                                ';
+                                if (isset($capinhas['cor'])) {
+                                    echo '<td>' . $capinhas['cor'] . '</td>';
+                                }else {
+                                    echo '<td> Não selecionou cor </td>';
+                                }
+                            echo '</tr>';
                     $i++;    
                     }
                 }
