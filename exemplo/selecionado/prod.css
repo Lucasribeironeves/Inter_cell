@@ -9,6 +9,7 @@ body {
     padding: 10px;
     margin: 10px;
 }
+
 .linha{
     margin-right: 30px;
 }
@@ -24,6 +25,7 @@ form [value="Selecione"]{
     border-radius: 10px;
     width: 60%;
 }
+
 form [value="Voltar"]{
     background-color: #d437e2;
     color: #ffff;
@@ -35,9 +37,11 @@ form [value="Voltar"]{
     border-radius: 10px;
     width: 50%;
 }
+
 img{
     border-radius: 10px;
 }
+
 input{
     border-radius: 7px;
 }
@@ -48,11 +52,13 @@ th{
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .titulo{
     color: white;
     font-size: 35px;
     text-align: center;
 }
+
 p{
     font-size: 22px;
     width: 100%;

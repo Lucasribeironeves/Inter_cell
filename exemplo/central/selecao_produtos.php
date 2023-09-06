@@ -20,13 +20,12 @@
     }
     
     session_start();
+
     if(isset($_POST['esvaziar'])){
         session_destroy();
         header("Location: selecao_produtos.php", true, 303);
     }
     $i = 1;
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -41,60 +40,43 @@
     <!--bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
 </head>
 <body>
     
     <p class="inicio">Bem vindo a Inter Cell</p>      
     <p>Confira nossos produtos!</p>
     
-    
-    
     <form action="selecao_produtos.php" method="post">
-    <div class="container">
-
-        <div class="row ">
-            <div class="col-lg-3 col-md-6  ">
-
-                <div class="capinhas">
-                    
-                    <input class="botao_entrar" type="submit" value="Capinhas" name="capinhas">
-                    
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6  ">
+                    <div class="capinhas">
+                        <input class="botao_entrar" type="submit" value="Capinhas" name="capinhas">
+                    </div>
                 </div>
-            </div>
             
-            <div class="col-lg-3 col-md-6  ">
-                <div class="peliculas">
-                    <input class="botao_entrar" type="submit" value="Películas" name="peliculas">
+                <div class="col-lg-3 col-md-6  ">
+                    <div class="peliculas">
+                        <input class="botao_entrar" type="submit" value="Películas" name="peliculas">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6  ">
 
-                <div class="finos">
-                    
-                    <input class="botao_entrar" type="submit" value="Fones" name="fones">
+                <div class="col-lg-3 col-md-6  ">
+                    <div class="finos">
+                        <input class="botao_entrar" type="submit" value="Fones" name="fones">
+                    </div>
                 </div>
-            </div>
                
-       
-        
-
-            <div class="col-lg-3 col-md-6  ">
-                
-                <div class="carregadores">
-                    <input class="botao_entrar_carregador" type="submit" value="Carregadores" name="carregador">
-                    
+                <div class="col-lg-3 col-md-6  ">
+                    <div class="carregadores">
+                        <input class="botao_entrar_carregador" type="submit" value="Carregadores" name="carregador">
+                    </div>
                 </div>
             </div>
- 
-            
-        </div>
     
-
-        <input class="final" type="submit" value="FINALIZAR" name="finalizar">
-        <input class="esvaziar" type="submit" value="ESVAZIAR CARRINHO 🛒" name="esvaziar">
-
-    </div>
+            <input class="final" type="submit" value="FINALIZAR" name="finalizar">
+            <input class="esvaziar" type="submit" value="ESVAZIAR CARRINHO 🛒" name="esvaziar">
+        </div>
     </form><br>
     
     <?php 
@@ -106,14 +88,14 @@
             echo 
             '<table class="selecao_prod">
                 <tr>
-                    <th colspan="5">Itens selecionados</th>
+                    <th colspan="5"><p class = "destaque">Itens selecionados</p></th>
                 </tr>
                 <tr>
-                    <th>Indíce</th>
-                    <th>Nome</th>
-                    <th>Descrição</th>
-                    <th>Quantidade</th>
-                    <th>Valor</th>
+                    <th><p class = "destaque2">Indíce</p></th>
+                    <th><p class = "destaque2">Nome</p></th>
+                    <th><p class = "destaque2">Descrição</p></th>
+                    <th><p class = "destaque2">Quantidade</p></th>
+                    <th><p class = "destaque2">Valor</p></th>
                 </tr>';
 
                 if(isset($_SESSION['capinhas'])){
@@ -180,8 +162,8 @@
              
                 echo '<tr>
                         <td colspan="3"></td>
-                        <th>Valor total</th>
-                        <td>'. 'R$' . $_SESSION['valor_total'] . '</td>
+                        <th><p class = "destaque2">Valor total</p></th>
+                        <td><p class = "dtq_vtl">'. 'R$' . $_SESSION['valor_total'] . '</p></td>
                     </tr>';                  
 
             echo 
@@ -191,9 +173,6 @@
                 echo "Selecione algo :)";
             }
         }
-
-    
-    ?>
-    
+    ?> 
 </body>
 </html>

@@ -2,9 +2,11 @@ body {
     background-image: url(../imgs/wal.png);
     background-size: cover;
 }
+
 .inicio{
     font-weight: 700;
 }
+
 /* imagens das divs */
 .capinhas{
     background-image: url(imgsss/capinha_celular.jpg);
@@ -13,6 +15,7 @@ body {
     border-radius: 8px;
     margin:10px;
 }
+
 .peliculas{
     background-image: url(imgsss/pelicula.jpg);
     width: 100%;
@@ -20,6 +23,7 @@ body {
     border-radius: 8px;
     margin:10px;
 }
+
 .finos{
     background-image: url(imgsss/fone_ouvido.jpg);
     width: 100%;
@@ -27,6 +31,7 @@ body {
     border-radius: 8px;
     margin:10px;
 }
+
 .carregadores{
     background-image: url(imgsss/carregador.webp);
     width: 100%;
@@ -34,13 +39,7 @@ body {
     border-radius: 8px;
     margin:10px;
 }
-.caixas{
-    background-image: url(imgsss/liv.jpg);
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
-    margin:10px;
-}
+
 /*configurando tabela*/
 table{
     color: white;
@@ -48,9 +47,10 @@ table{
     text-align: center;
     margin: 10px;
     width: 75%;
-    border-radius: 40px;
+    border-radius: 10px;
     padding: 20px;
 }
+
 .tabela_loguin{
     color: white;
     background-color: rgba(0, 0, 0, 0.524);
@@ -60,11 +60,13 @@ table{
     border-radius: 40px;
     padding: 20px;
 }
+
 .destaque{
     background-color: rgba(255, 255, 255, 0.202);
     font-size: 30px;
     border-radius: 10px;
 }
+
 .destaque2{
     background-color: rgba(255, 255, 255, 0.043);
     font-size: 25px;
@@ -74,6 +76,7 @@ table{
     margin-bottom: 5px;
     margin-top: 0px;
 }
+
 .destaque3{
     background-color: rgba(255, 255, 255, 0.136);
     font-size: 30px;
@@ -83,9 +86,11 @@ table{
     margin-bottom: 5px;
     margin-top: 0px;
 }
+
 .dtq_vtl{
     font-size: 25px;
 }
+
 .botao_logar{
     background-color: rgb(26, 84, 244);
     font-size: 20px;
@@ -95,6 +100,7 @@ table{
     border-radius: 5px;
     font-weight: 700;
 }
+
 .resulmo{
     color: white;
     background-color: rgba(0, 0, 0, 0.524);
@@ -103,9 +109,7 @@ table{
     width: 70%;
     padding: 40px;
     border-radius: 10px;
-
 }
-
 
 .botao_entrar{
     margin-top: 200px;
@@ -119,8 +123,8 @@ table{
     cursor: pointer;
     border-radius: 8px;
     padding: 5px;
-
 }
+
 .botao_entrar_carregador{
     margin-top: 200px;
     margin-left: 22%;
@@ -138,21 +142,25 @@ table{
 .row{
     width: 100%;
 }
+
 p{
     font-size: 42px;
     color: #ffff;
     text-align: center;
 }
+
 .final{
     border-radius: 10px;
     background-color: rgb(26, 84, 244);
     font-weight: 700;
 }
+
 .esvaziar{
     background-color: rgb(255, 0, 0);
     border-radius: 10px;
     font-weight: 500;
 }
+
 .confirmacao{
     background-color: rgba(0, 0, 0, 0.671);
     width: 50%;
@@ -172,17 +180,18 @@ p{
     margin-left: 43%;
     margin-right: 43%;
     font-weight: 700;
+}
 
-}
 input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    
+    -webkit-appearance: none;  
 }
+
 input[type=number]{
     border-radius: 5px;
     -moz-appearance: textfield;
     appearance: textfield;
 }
+
 .dados{
     border-radius: 5px;
 }

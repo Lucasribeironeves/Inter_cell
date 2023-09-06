@@ -15,12 +15,9 @@
                 'endereco' => $_POST['endereco'],
                 'telefone' => $_POST['telefone']
             ); 
-
             header("Location: ../central/forma_pagamento.php", true, 303);
         }
-
     }
-    //echo "Valor total: R$". $_SESSION['valor_total'];
 ?>
 
 <!DOCTYPE html>
@@ -36,22 +33,22 @@
 <body>
     <center>
         <table>
-        <tr>
-            <th colspan="5"><p class="destaque">Itens selecionados</p></th>
-        </tr>
-        <tr>
-            <th><p class="destaque2">Indíce</p></th>
-            <th><p class="destaque2">Nome</p></th>
-            <th><p class="destaque2">Descrição</p></th>
-            <th><p class="destaque2">Quantidade</p></th>
-            <th><p class="destaque2">Valor</p></th>
-        </tr>
+            <tr>
+                <th colspan="5"><p class="destaque">Itens selecionados</p></th>
+            </tr>
+            <tr>
+                <th><p class="destaque2">Indíce</p></th>
+                <th><p class="destaque2">Nome</p></th>
+                <th><p class="destaque2">Descrição</p></th>
+                <th><p class="destaque2">Quantidade</p></th>
+                <th><p class="destaque2">Valor</p></th>
+            </tr>
 
-        <!-- Exibição das capinhas -->
-        <?php 
-            if(isset($_SESSION['capinhas'])){
-                foreach($_SESSION['capinhas'] as $capinhas){
-        ?>
+            <!-- Exibição das capinhas -->
+            <?php 
+                if(isset($_SESSION['capinhas'])){
+                    foreach($_SESSION['capinhas'] as $capinhas){
+            ?>
 
             <tr>
                 <td><?php echo $i ?></td>
@@ -59,6 +56,7 @@
                 <td><?php echo $capinhas['desc']; ?></td>
                 <td><?php echo $capinhas['qtd']; ?></td>
                 <td><?php echo $capinhas['vl']; ?></td>
+
                 <?php 
                     if (isset($capinhas['cor'])) {
                         echo '<td>' . $capinhas['cor'] . '</td>';
@@ -67,19 +65,19 @@
                     }
                     echo '</tr>';
                 ?>
-                </tr>
+            </tr>
         
-        <?php 
-        $i++;
+            <?php 
+                $i++;
+                    }
                 }
-            }
-        ?>
+            ?>
 
-        <!-- Exibição das películas -->
-        <?php
-            if(isset($_SESSION['peliculas'])){ 
-                foreach($_SESSION['peliculas'] as $peliculas){
-        ?>
+            <!-- Exibição das películas -->
+            <?php
+                if(isset($_SESSION['peliculas'])){ 
+                    foreach($_SESSION['peliculas'] as $peliculas){
+            ?>
 
             <tr>
                 <td><?php echo $i ?></td>
@@ -89,17 +87,17 @@
                 <td><?php echo $peliculas['vl']; ?></td>
             </tr>
         
-        <?php 
-        $i++;
+            <?php 
+                $i++;
+                    }
                 }
-            }
-        ?>
+            ?>
 
-        <!-- Exibição dos fones de ouvido -->
-        <?php 
-            if(isset($_SESSION['fones'])){
-                foreach($_SESSION['fones'] as $fones){
-        ?>
+            <!-- Exibição dos fones de ouvido -->
+            <?php 
+                if(isset($_SESSION['fones'])){
+                    foreach($_SESSION['fones'] as $fones){
+            ?>
 
             <tr>
                 <td><?php echo $i ?></td>
@@ -109,17 +107,17 @@
                 <td><?php echo $fones['vl']; ?></td>
             </tr>
         
-        <?php
-        $i++; 
+            <?php
+                $i++; 
+                    }
                 }
-            }
-        ?>
+            ?>
 
-        <!-- Exibição dos carregadores -->
-        <?php
-            if(isset($_SESSION['carregadores'])){ 
-                foreach($_SESSION['carregadores'] as $carregadores){
-        ?>
+            <!-- Exibição dos carregadores -->
+            <?php
+                if(isset($_SESSION['carregadores'])){ 
+                    foreach($_SESSION['carregadores'] as $carregadores){
+            ?>
 
             <tr>
                 <td><?php echo $i ?></td>
@@ -129,50 +127,54 @@
                 <td><?php echo $carregadores['vl']; ?></td>
             </tr>
         
-        <?php 
-        $i++;
+            <?php 
+                $i++;
+                    }
                 }
-            }
-        ?>
+            ?>
 
-        <!-- Exibição das caixas de som -->
-        <?php 
-            if(isset($_SESSION['caixas'])){
-                foreach($_SESSION['caixas'] as $caixas){
-        ?>
+            <!-- Exibição das caixas de som -->
+            <?php 
+                if(isset($_SESSION['caixas'])){
+                    foreach($_SESSION['caixas'] as $caixas){
+            ?>
 
-        <?php 
-        $i++;
+            <?php 
+                $i++;
+                    }
                 }
-            }
  
-            echo '<tr>
+                echo 
+                '<tr>
                     <td colspan="3"></td>
                     <th><p class="destaque2">Valor total</p></th>
                     <td><p class="dtq_vtl">'. 'R$' . $_SESSION['valor_total'] . '</p></td>
                 </tr>';
-        ?>
-
-    </table></center><br>
+            ?>
+        </table>
+    </center><br>
 
     <form action="login.php" method="post">
-        <center><table class="tabela_loguin">
-            <tr>
-                <th colspan="2"><p class="destaque">Faça seu login</p></th>
-            </tr>
-            <tr>
-                <td><p class="destaque2">Nome:</p></td>
-                <td><input class="dados" type="text" name="nome" id="nome"></td>
-            </tr>
-            <tr>
-                <td><p class="destaque2">Endereço:</p></td>
-                <td><input class="dados" type="text" name="endereco" id="endereco"></td>
-            </tr>
-            <tr>
-                <td><p class="destaque2">Telefone:</p></td>
-                <td><input class="dados" type="number" name="telefone" id="telefone"></td>
-            </tr>
-        </table></center><br>
+        <center>
+            <table class="tabela_loguin">
+                <tr>
+                    <th colspan="2"><p class="destaque">Faça seu login</p></th>
+                </tr>
+                <tr>
+                    <td><p class="destaque2">Nome:</p></td>
+                    <td><input class="dados" type="text" name="nome" id="nome"></td>
+                </tr>
+                <tr>
+                    <td><p class="destaque2">Endereço:</p></td>
+                    <td><input class="dados" type="text" name="endereco" id="endereco"></td>
+                </tr>
+                <tr>
+                    <td><p class="destaque2">Telefone:</p></td>
+                    <td><input class="dados" type="number" name="telefone" id="telefone"></td>
+                </tr>
+            </table>
+        </center><br>
+
         <input class="botao_logar" type="submit" name="logar" value="Logar">
     </form>
 </body>

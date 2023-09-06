@@ -1,12 +1,14 @@
-body {
+body{
     background-image: url(../imgs/wal.png);
 }
+
 th{
     color: #ffff;
     text-transform: uppercase;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 form [value="Logar"]{
     background-color: #d437e2;
     color: #ffff;
@@ -17,6 +19,7 @@ form [value="Logar"]{
     border-radius: 10px;
     margin-left: 475px;
 }
+
 form [value="Confirmar"]{
     background-color: #d437e2;
     color: #ffff;
@@ -27,9 +30,7 @@ form [value="Confirmar"]{
     border-radius: 10px;
     margin-left: 475px;
 }
-table{
-    
-}
+
 td{
     text-align: center;
      background-color: #0772EB;
@@ -38,4 +39,4 @@ td{
      font-weight: bold;
      border-radius: 8px;
      font-family: Arial, Helvetica, sans-serif;
- }
+}

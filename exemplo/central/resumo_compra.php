@@ -1,11 +1,11 @@
 <?php 
 
-session_start();
-$i = 1;
-if(isset($_POST["Confirmar"])){
-    header("Location: ../central/confirmacao_compra.php", true, 303);
-}
+    session_start();
+    $i = 1;
 
+    if(isset($_POST["Confirmar"])){
+        header("Location: ../central/confirmacao_compra.php", true, 303);
+    }
 
 ?>
 
@@ -21,7 +21,6 @@ if(isset($_POST["Confirmar"])){
 </head>
 <body>
     <center>
-
         <table class="resulmo">
             <tr>
                 <th colspan="5"><p class="destaque">Dados do usuário ;D</p></th>
@@ -52,15 +51,17 @@ if(isset($_POST["Confirmar"])){
             </tr><br>
 
             <tr>
-            <th colspan="5"><p class="destaque">Itens selecionados</p></th>
-        </tr>
-        <tr>
-            <th><p class="destaque2">Indíce</p></th>
-            <th><p class="destaque2">Nome</p></th>
-            <th><p class="destaque2">Descrição</p></th>
-            <th><p class="destaque2">Quantidade</p></th>
-            <th><p class="destaque2">Valor</p></th>
-        </tr>
+                <th colspan="5"><p class="destaque">Itens selecionados</p></th>
+            </tr>
+
+            <tr>
+                <th><p class="destaque2">Indíce</p></th>
+                <th><p class="destaque2">Nome</p></th>
+                <th><p class="destaque2">Descrição</p></th>
+                <th><p class="destaque2">Quantidade</p></th>
+                <th><p class="destaque2">Valor</p></th>
+            </tr>
+
         <!-- Exibição das capinhas -->
         <?php
             if(isset($_SESSION['capinhas'])){ 
@@ -74,20 +75,19 @@ if(isset($_POST["Confirmar"])){
                 <td><?php echo $capinhas['qtd']; ?></td>
                 <td><?php echo $capinhas['vl']; ?></td>
                 <?php 
-                if (isset($capinhas['cor'])) {
-                    echo "<td>".$capinhas['cor']."</td>";    
-                }else{
-                    echo "<td>Não selecionou cor</td>";
-                    
-                }
+                    if (isset($capinhas['cor'])) {
+                        echo "<td>".$capinhas['cor']."</td>";    
+                    }else{
+                        echo "<td>Não selecionou cor</td>";
+                    }
                 ?>
             </tr>
         
         <?php 
-        $i++;
+            $i++;
                 }
             }
-            ?>
+        ?>
 
         <!-- Exibição das películas -->
         <?php 
@@ -104,7 +104,7 @@ if(isset($_POST["Confirmar"])){
             </tr>
             
         <?php 
-        $i++;
+            $i++;
                 }
             }
         ?>
@@ -113,9 +113,9 @@ if(isset($_POST["Confirmar"])){
         <?php
             if(isset($_SESSION['fones'])){ 
                 foreach($_SESSION['fones'] as $fones){
-                    ?>
+        ?>
 
-<tr>
+            <tr>
                 <td><?php echo $i ?></td>
                 <td><?php echo "Fone de ouvido" ?></td>
                 <td><?php echo $fones['desc']; ?></td>
@@ -124,37 +124,33 @@ if(isset($_POST["Confirmar"])){
             </tr>
         
         <?php
-        $i++; 
-    }
-}
-?>
+            $i++; 
+                }
+            }
+        ?>
 
-<!-- Exibição dos carregadores -->
-<?php 
+        <!-- Exibição dos carregadores -->
+        <?php 
             if(isset($_SESSION['carregadores'])){
                 foreach($_SESSION['carregadores'] as $carregadores){
-                    ?>
+        ?>
 
-<tr>
-    <td><?php echo $i ?></td>
-    <td><?php echo "Carregador" ?></td>
+            <tr>
+                <td><?php echo $i ?></td>
+                <td><?php echo "Carregador" ?></td>
                 <td><?php echo $carregadores['desc']; ?></td>
                 <td><?php echo $carregadores['qtd']; ?></td>
                 <td><?php echo $carregadores['vl']; ?></td>
             </tr>
         
         <?php 
-        $i++;
+            $i++;
                 }
             }
         ?>
 
-
-        
         <?php 
-        $i++;
-                
-            
+            $i++;
 
             echo '
             <tr>
@@ -164,46 +160,42 @@ if(isset($_POST["Confirmar"])){
             </tr>';
         ?>
         
-        <tr>
-            <th colspan='5'><p class="destaque">Dados de pagamento $</p></th>
-        </tr>
-        <tr>
-            <th></th>
-            <th><p class="destaque2">Método</p></th>
-            <th></th>
-            <th><p class="destaque2">Dados</p></th>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <?php
-                    if(isset($_SESSION['dadospag']['metselec'])){
+            <tr>
+                <th colspan='5'><p class="destaque">Dados de pagamento $</p></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><p class="destaque2">Método</p></th>
+                <th></th>
+                <th><p class="destaque2">Dados</p></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <?php
+                        if(isset($_SESSION['dadospag']['metselec'])){
                         echo $_SESSION['dadospag']['metselec'];
-                    }    
-                ?>
-            </td>
-            <td></td>
-            <td>
-                <?php 
-                    if($_SESSION['dadospag']['metselec'] == 'Pix'){
-                        echo $_SESSION['dadospag']['pix'];
-                    }else if($_SESSION['dadospag']['metselec'] == 'Cartão de crédito'){
-                        echo $_SESSION['dadospag']['cred'];
-                    }else if($_SESSION['dadospag']['metselec'] == 'Cartão de débito'){
-                        echo $_SESSION['dadospag']['deb'];
-                    }
-                ?>
-            </td>
-        </tr>  
-        </br> 
-    </table>
-</center>
+                        }    
+                    ?>
+                </td>
+                <td></td>
+                <td>
+                    <?php 
+                        if($_SESSION['dadospag']['metselec'] == 'Pix'){
+                            echo $_SESSION['dadospag']['pix'];
+                        }else if($_SESSION['dadospag']['metselec'] == 'Cartão de crédito'){
+                            echo $_SESSION['dadospag']['cred'];
+                        }else if($_SESSION['dadospag']['metselec'] == 'Cartão de débito'){
+                            echo $_SESSION['dadospag']['deb'];
+                        }
+                    ?>
+                </td>
+            </tr></br> 
+        </table>
+    </center>
+
     <form action="resumo_compra.php" method="post"> 
-
-
         <input class="botao_final" type="submit" value="CONFIRMAR" name="Confirmar">  
- 
     </form>
-
 </body>
 </html>

@@ -8,6 +8,7 @@ th{
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 table{
     background-color: rgb(93, 93, 172);
     opacity: 0.5px;
@@ -21,15 +22,15 @@ table{
         border-left-width: 8px;
         width: 500px;
         height: 450px;
-        margin-left: 418px;
-    
+        margin-left: 418px;   
 }
+
 td{
     text-align: center;
-     background-color: #b00ec5;
-     color: #ffff;
-     text-transform: uppercase;
-     font-weight: bold;
-     border-radius: 8px;
-     font-family: Arial, Helvetica, sans-serif;
- }
+    background-color: #b00ec5;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
