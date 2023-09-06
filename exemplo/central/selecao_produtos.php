@@ -86,7 +86,7 @@
             || isset($_SESSION['caixas']) || isset($_SESSION['carregadores'])){
             
             echo 
-            '<table class="selecao_prod">
+            '<center><table class="selecao_prod">
                 <tr>
                     <th colspan="5"><p class = "destaque">Itens selecionados</p></th>
                 </tr>
@@ -167,7 +167,7 @@
                     </tr>';                  
 
             echo 
-            '</table><br>';
+            '</table></center><br>';
 
             }else{
                 echo "Selecione algo :)";
