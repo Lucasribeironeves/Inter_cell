@@ -37,7 +37,7 @@ if(isset($_POST['confirmar'])){
 </head>
 <body>
     <!-- Exibição dos dados do usuário -->
-    <center><table>
+    <center><table class="tabela_loguin">
             <tr>
                 <th colspan="2"><p class="destaque">Dados do usuário ;D</p></th>
             </tr>
@@ -83,6 +83,15 @@ if(isset($_POST['confirmar'])){
                 <td><?php echo $capinhas['desc']; ?></td>
                 <td><?php echo $capinhas['qtd']; ?></td>
                 <td><?php echo $capinhas['vl']; ?></td>
+                <?php 
+                if(isset($capinhas['cor'])){
+                    echo " <td>".$capinhas['cor']."</td>";
+                }else{
+                    echo "<td>Não selecionou cor";
+                }
+                
+                ?>
+
             </tr>
         
         <?php 
@@ -175,7 +184,7 @@ if(isset($_POST['confirmar'])){
     </table></center><br>
 
     <form action="forma_pagamento.php" method="post">
-        <center><table>
+        <center><table class="tabela_loguin">
             <tr>
                 <th colspan="4"><p class="destaque">Selecione a método de pagamento!</p></th>
             </tr>

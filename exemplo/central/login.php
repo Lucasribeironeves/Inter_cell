@@ -59,7 +59,15 @@
                 <td><?php echo $capinhas['desc']; ?></td>
                 <td><?php echo $capinhas['qtd']; ?></td>
                 <td><?php echo $capinhas['vl']; ?></td>
-            </tr>
+                <?php 
+                    if (isset($capinhas['cor'])) {
+                        echo '<td>' . $capinhas['cor'] . '</td>';
+                    }else {
+                        echo '<td> Não selecionou cor </td>';
+                    }
+                    echo '</tr>';
+                ?>
+                </tr>
         
         <?php 
         $i++;
@@ -148,7 +156,7 @@
     </table></center><br>
 
     <form action="login.php" method="post">
-        <center><table>
+        <center><table class="tabela_loguin">
             <tr>
                 <th colspan="2"><p class="destaque">Faça seu login</p></th>
             </tr>

@@ -73,6 +73,14 @@ if(isset($_POST["Confirmar"])){
                 <td><?php echo $capinhas['desc']; ?></td>
                 <td><?php echo $capinhas['qtd']; ?></td>
                 <td><?php echo $capinhas['vl']; ?></td>
+                <?php 
+                if (isset($capinhas['cor'])) {
+                    echo "<td>".$capinhas['cor']."</td>";    
+                }else{
+                    echo "<td>Não selecionou cor</td>";
+                    
+                }
+                ?>
             </tr>
         
         <?php 
@@ -141,24 +149,12 @@ if(isset($_POST["Confirmar"])){
             }
         ?>
 
-        <!-- Exibição das caixas de som -->
-        <?php 
-            if(isset($_SESSION['caixas'])){
-                foreach($_SESSION['caixas'] as $caixas){
-        ?>
 
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo "Caixas de som" ?></td>
-                <td><?php echo $caixas['desc']; ?></td>
-                <td><?php echo $caixas['qtd']; ?></td>
-                <td><?php echo $caixas['vl']; ?></td>
-            </tr>
         
         <?php 
         $i++;
-                }
-            }
+                
+            
 
             echo '
             <tr>
